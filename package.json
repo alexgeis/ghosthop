@@ -1,0 +1,21 @@
+{
+	"name": "ghosthop",
+	"version": "1.0.0",
+	"description": "Search and replace keywords: `deployed_link`, `product-screenshot`",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd ghosthop && npm run dev",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alexgeis/ghosthop.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alexgeis/ghosthop/issues"
+	},
+	"homepage": "https://github.com/alexgeis/ghosthop#readme"
+}
