@@ -1,21 +1,23 @@
 {
-	"name": "ghosthop",
-	"version": "1.0.0",
-	"description": "Search and replace keywords: `deployed_link`, `product-screenshot`",
-	"main": "index.js",
-	"scripts": {
-		"start": "cd ghosthop && npm run dev",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/alexgeis/ghosthop.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/alexgeis/ghosthop/issues"
-	},
-	"homepage": "https://github.com/alexgeis/ghosthop#readme"
+  "name": "ghosthop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.3",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.3",
+    "next": "13.1.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4"
+  }
 }
