@@ -27,11 +27,8 @@
 	place-items: center;
 }
 
-.iconWrapper img {
+footerImg {
 	width: 25px;
-}
-
-img {
 	max-width: 100%;
 	height: auto;
 }
