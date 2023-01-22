@@ -2,10 +2,11 @@
 import { useState } from "react";
 import styles from "./NavBar.module.css";
 import Link from "next/link";
-
-import { NavLink } from "react-router-dom";
+import { useRouter } from "next/router";
 
 export function NavBar() {
+	const router = useRouter();
+
 	const [hamOpen, setHamOpen] = useState(false);
 
 	//TODO: update with better type
@@ -38,31 +39,14 @@ export function NavBar() {
 				</a>
 			</div>
 			<div className={styles.nav}>
-				<Link
-					to="projects"
-					className={({ isActive }) =>
-						isActive ? styles.navLinkActive : styles.navLink
-					}
-				>
-					projects
-				</Link>
-				<Link
-					to="music"
-					className={({ isActive }) =>
-						isActive ? styles.navLinkActive : styles.navLink
-					}
-				>
-					music
-				</Link>
-				<Link
-					to="contact"
-					className={({ isActive }) =>
-						isActive ? styles.navLinkActive : styles.navLink
-					}
-				>
-					contact
-				</Link>
+				<div className={router.pathname == "/" ? styles.active : ""}>
+					<Link href="/">HOME</Link>
+				</div>
+				<div className={router.pathname == "/contact" ? styles.active : ""}>
+					<Link href="contact">CONTACT</Link>
+				</div>
 			</div>
+			{/* HAMBERDER */}
 			<div className={styles.hamburgerWrapper}>
 				<div
 					className={styles.hamburgerBox}
@@ -77,33 +61,34 @@ export function NavBar() {
 						hamOpen ? styles.hamburgerMenuActive : ""
 					}`}
 				>
-					<Link
-						to="projects"
-						className={({ isActive }) =>
-							isActive ? styles.hamburgerLinkActive : styles.hamburgerLink
+					<div
+						className={
+							router.pathname == "/"
+								? styles.hamburgerLinkActive
+								: styles.hamburgerLink
 						}
-						onClick={() => closeMenu()}
 					>
-						projects
-					</Link>
-					<Link
-						to="music"
-						className={({ isActive }) =>
-							isActive ? styles.hamburgerLinkActive : styles.hamburgerLink
+						<Link
+							href="/"
+							onClick={() => closeMenu()}
+						>
+							HOME
+						</Link>
+					</div>
+					<div
+						className={
+							router.pathname == "/contact"
+								? styles.hamburgerLinkActive
+								: styles.hamburgerLink
 						}
-						onClick={() => closeMenu()}
 					>
-						music
-					</Link>
-					<Link
-						to="contact"
-						className={({ isActive }) =>
-							isActive ? styles.hamburgerLinkActive : styles.hamburgerLink
-						}
-						onClick={() => closeMenu()}
-					>
-						contact
-					</Link>
+						<Link
+							href="/contact"
+							onClick={() => closeMenu()}
+						>
+							CONTACT
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
