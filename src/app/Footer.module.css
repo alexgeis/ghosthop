@@ -27,7 +27,7 @@
 	place-items: center;
 }
 
-footerImg {
+.footerImg {
 	width: 25px;
 	max-width: 100%;
 	height: auto;
