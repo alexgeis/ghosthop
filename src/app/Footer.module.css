@@ -11,8 +11,8 @@
 	justify-content: center;
 }
 
-a {
-	color: inherit;
+.footLink {
+	/* color: inherit; */
 	text-decoration: none;
 }
 
