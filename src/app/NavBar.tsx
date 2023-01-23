@@ -5,10 +5,8 @@ import ghosthopLogo from "../assets/logos/ghost-alone.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { useRouter } from "next/navigation";
 
 export function NavBar() {
-	// const router = useRouter();
 	const pathname = usePathname();
 
 	const [hamOpen, setHamOpen] = useState(false);
@@ -17,18 +15,6 @@ export function NavBar() {
 	};
 	const closeMenu = () => {
 		setHamOpen(false);
-	};
-
-	//TODO: update with better type
-	const navLinkClickHandler = ({ currentTarget }: any) => {
-		currentTarget.classList.add("active");
-		// const tag: HTMLElement = e.currentTarget
-		// if (!filter.includes(tag)) {
-		//     setFilter([...filter, tag]);
-		// } else {
-		//     const filteredArray = filter.filter((item) => item !== tag);
-		//     setFilter([...filteredArray]);
-		// }
 	};
 
 	return (
@@ -74,7 +60,7 @@ export function NavBar() {
 						hamOpen ? styles.hamburgerMenuActive : ""
 					}`}
 				>
-					<div
+					{/* <div
 						className={
 							pathname == "/"
 								? styles.hamburgerLinkActive
@@ -87,7 +73,7 @@ export function NavBar() {
 						>
 							HOME
 						</Link>
-					</div>
+					</div> */}
 					<div
 						className={
 							pathname == "/contact"

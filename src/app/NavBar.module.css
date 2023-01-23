@@ -1,15 +1,16 @@
 .wrapper {
 	position: -webkit-sticky;
 	position: sticky;
+	z-index: 1001;
+	top: 0;
 	max-width: 1200px;
 	width: 100%;
-	margin: 0 auto;
-	top: 0;
-	display: flex;
 	padding: 10px;
+	margin: 0 auto;
+
+	display: flex;
 	justify-content: space-between;
 	background-color: black;
-	z-index: 1001;
 }
 
 .logoWrapper {
@@ -89,7 +90,8 @@
 .hamburgerMenuActive {
 	position: absolute;
 	display: grid;
-	place-items: center;
+	/* place-items: center; 
+	UNCOMMENT WHEN >1 menu items */
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -104,15 +106,13 @@
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	/* font-family: Poppins, sans-serif; */
 	color: white;
 }
 .hamburgerLinkActive {
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	/* font-family: Poppins, sans-serif; */
-	color: purple;
+	color: yellow;
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);
