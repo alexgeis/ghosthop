@@ -1,10 +1,12 @@
 .wrapper {
 	position: -webkit-sticky;
 	position: sticky;
+	max-width: 1200px;
 	width: 100%;
+	margin: 0 auto;
 	top: 0;
 	display: flex;
-	padding: 20px 0;
+	padding: 10px;
 	justify-content: space-between;
 	background-color: black;
 	z-index: 1001;
@@ -22,16 +24,17 @@
 	/* font-family: Poppins,sans-serif; */
 	line-height: 0.7em;
 	color: #e6e6e6;
-	padding: 10px 20px;
+	/* padding: 10px 20px; */
 	font-weight: 700;
 	font-size: 32px;
 
-	text-shadow: 0 0 var(--whiteColor), 0 1.5em var(--navActiveUnderlineColor);
+	text-shadow: 0 0 white, 0 1.5em purple;
 	overflow: hidden;
 	transition: 0.4s;
 }
 .logoLink:hover {
-	text-shadow: 0 -1.5em var(--whiteColor), 0 0 var(--navActiveUnderlineColor);
+	text-shadow: 0 -1.5em yellow, 0 0 purple;
+	cursor: pointer;
 }
 .logo {
 	background-size: contain;
@@ -40,20 +43,23 @@
 .nav {
 	display: none;
 	box-sizing: border-box;
-	margin-right: 10%;
+	margin-right: 20px;
 }
 .navLink {
 	color: white;
-	padding: 10px 0;
-	margin: 0 20px;
+	/* padding: 10px 0; */
+	/* margin: 0 20px; */
 	font-size: 1.2rem;
 	/* font-family: Poppins,sans-serif; */
 }
+.navLink:hover {
+	color: yellow;
+}
 .navLinkActive {
 	color: yellow;
-	padding: 7px 0;
-	margin: 0 20px;
-	font-size: 1.3rem;
+	padding-bottom: 5px;
+	/* margin: 0 20px; */
+	font-size: 110%;
 	border-bottom: 3px solid white;
 }
 
@@ -72,7 +78,7 @@
 .hamburgerBox div {
 	width: 35px;
 	height: 5px;
-	background-color: var(--whiteColor);
+	background-color: white;
 	margin: 6px 0;
 	transition: 0.4s;
 }
@@ -89,7 +95,7 @@
 	width: 100vw;
 	height: 100vh;
 	padding: 20vh 20px;
-	background-color: var(--backgroundDark);
+	background-color: black;
 	text-align: center;
 	z-index: 1000 !important;
 }
@@ -99,14 +105,14 @@
 	display: block;
 	font-size: 30px;
 	/* font-family: Poppins, sans-serif; */
-	color: var(--whiteColor);
+	color: white;
 }
 .hamburgerLinkActive {
 	opacity: 1;
 	display: block;
 	font-size: 30px;
 	/* font-family: Poppins, sans-serif; */
-	color: (var(--navActiveUnderlineColor));
+	color: purple;
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);

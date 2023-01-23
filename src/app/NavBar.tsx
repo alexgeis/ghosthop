@@ -42,15 +42,21 @@ export function NavBar() {
 						src={ghosthopLogo}
 						alt="ghosthop logo"
 						className={styles.logo}
-						width={150}
-						height={150}
+						width={90}
+						height={90}
+						priority
 					></Image>
 				</Link>
 				{/* GHOSTHOP */}
 			</div>
 			<div className={styles.nav}>
-				<div className={pathname == "/contact" ? styles.active : ""}>
-					<Link href="contact">CONTACT</Link>
+				<div className={pathname == "/contact" ? styles.navLinkActive : ""}>
+					<Link
+						href="contact"
+						className={styles.navLink}
+					>
+						CONTACT
+					</Link>
 				</div>
 			</div>
 			{/* HAMBERDER */}

@@ -18,6 +18,7 @@ export function Footer() {
 						<Image
 							src={githubLogo}
 							alt="github"
+							className={styles.footerImg}
 						/>
 					</div>
 				</a>
@@ -31,6 +32,7 @@ export function Footer() {
 						<Image
 							src={linkedInLogo}
 							alt="linkedIn"
+							className={styles.footerImg}
 						/>
 					</div>
 				</a>
@@ -44,6 +46,7 @@ export function Footer() {
 						<Image
 							src={spotifyLogo}
 							alt="spotify"
+							className={styles.footerImg}
 						/>
 					</div>
 				</a>
