@@ -20,12 +20,7 @@
 }
 
 .logoLink {
-	/* height: 6em;
-    padding: 1.5em; */
-	/* font-family: Poppins,sans-serif; */
-	line-height: 0.7em;
 	color: #e6e6e6;
-	/* padding: 10px 20px; */
 	font-weight: 700;
 	font-size: 32px;
 
@@ -48,10 +43,7 @@
 }
 .navLink {
 	color: white;
-	/* padding: 10px 0; */
-	/* margin: 0 20px; */
 	font-size: 1.2rem;
-	/* font-family: Poppins,sans-serif; */
 }
 .navLink:hover {
 	color: yellow;
