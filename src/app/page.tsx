@@ -7,9 +7,18 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			{/* <div>GHOSTHOP</div> */}
-			<section className={styles.heroSlider}>
-				<video src={`/dj-controller.mp4`}></video>
+			<section className={styles.heroWrapper}>
+				<div className={styles.overlay}></div>
+				<video
+					src={`/dj-controller.mp4`}
+					autoPlay
+					loop
+					muted
+				></video>
+				<div className={styles.content}>
+					<h1>GHOSTHOP</h1>
+					<p>DJ WONDERS</p>
+				</div>
 			</section>
 		</main>
 	);
