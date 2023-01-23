@@ -14,6 +14,7 @@ export default function Home() {
 					autoPlay
 					loop
 					muted
+					playsInline
 				>
 					<source
 						src={`/dj-controller.mp4`}
