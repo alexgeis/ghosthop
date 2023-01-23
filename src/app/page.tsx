@@ -10,11 +10,16 @@ export default function Home() {
 			<section className={styles.heroWrapper}>
 				<div className={styles.overlay}></div>
 				<video
-					src={`/dj-controller.mp4`}
+					// src={`/dj-controller.mp4`}
 					autoPlay
 					loop
 					muted
-				></video>
+				>
+					<source
+						src={`/dj-controller.mp4`}
+						type="video/mp4"
+					/>
+				</video>
 				<div className={styles.content}>
 					<h1>GHOSTHOP</h1>
 					<p>DJ WONDERS</p>
