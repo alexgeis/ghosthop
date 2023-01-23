@@ -1,13 +1,23 @@
 "use client";
-import { useState } from "react";
 import styles from "./NavBar.module.css";
+import { useState } from "react";
+import ghosthopLogo from "../assets/logos/ghost-alone.jpeg";
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export function NavBar() {
-	const router = useRouter();
+	// const router = useRouter();
+	const pathname = usePathname();
 
 	const [hamOpen, setHamOpen] = useState(false);
+	const hamburgerMenuToggle = () => {
+		setHamOpen(!hamOpen);
+	};
+	const closeMenu = () => {
+		setHamOpen(false);
+	};
 
 	//TODO: update with better type
 	const navLinkClickHandler = ({ currentTarget }: any) => {
@@ -21,28 +31,25 @@ export function NavBar() {
 		// }
 	};
 
-	const hamburgerMenuToggle = () => {
-		setHamOpen(!hamOpen);
-	};
-	const closeMenu = () => {
-		setHamOpen(false);
-	};
-
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.logoWrapper}>
-				<a
+				<Link
 					href="/"
-					className={styles.logo}
+					className={styles.logoLink}
 				>
-					geis
-				</a>
+					<Image
+						src={ghosthopLogo}
+						alt="ghosthop logo"
+						className={styles.logo}
+						width={150}
+						height={150}
+					></Image>
+				</Link>
+				{/* GHOSTHOP */}
 			</div>
 			<div className={styles.nav}>
-				<div className={router.pathname == "/" ? styles.active : ""}>
-					<Link href="/">HOME</Link>
-				</div>
-				<div className={router.pathname == "/contact" ? styles.active : ""}>
+				<div className={pathname == "/contact" ? styles.active : ""}>
 					<Link href="contact">CONTACT</Link>
 				</div>
 			</div>
@@ -63,7 +70,7 @@ export function NavBar() {
 				>
 					<div
 						className={
-							router.pathname == "/"
+							pathname == "/"
 								? styles.hamburgerLinkActive
 								: styles.hamburgerLink
 						}
@@ -77,7 +84,7 @@ export function NavBar() {
 					</div>
 					<div
 						className={
-							router.pathname == "/contact"
+							pathname == "/contact"
 								? styles.hamburgerLinkActive
 								: styles.hamburgerLink
 						}

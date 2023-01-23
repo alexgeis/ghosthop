@@ -6,7 +6,7 @@
 	display: flex;
 	padding: 20px 0;
 	justify-content: space-between;
-	background-color: var(--backgroundDark);
+	background-color: black;
 	z-index: 1001;
 }
 
@@ -16,12 +16,12 @@
 	z-index: 1002;
 }
 
-.logo {
+.logoLink {
 	/* height: 6em;
     padding: 1.5em; */
 	/* font-family: Poppins,sans-serif; */
 	line-height: 0.7em;
-	color: #0000;
+	color: #e6e6e6;
 	padding: 10px 20px;
 	font-weight: 700;
 	font-size: 32px;
@@ -30,27 +30,31 @@
 	overflow: hidden;
 	transition: 0.4s;
 }
-.logo:hover {
+.logoLink:hover {
 	text-shadow: 0 -1.5em var(--whiteColor), 0 0 var(--navActiveUnderlineColor);
+}
+.logo {
+	background-size: contain;
 }
 
 .nav {
 	display: none;
 	box-sizing: border-box;
+	margin-right: 10%;
 }
 .navLink {
-	color: var(--whiteColor);
+	color: white;
 	padding: 10px 0;
 	margin: 0 20px;
 	font-size: 1.2rem;
 	/* font-family: Poppins,sans-serif; */
 }
 .navLinkActive {
-	color: var(--whiteColor);
+	color: yellow;
 	padding: 7px 0;
 	margin: 0 20px;
 	font-size: 1.3rem;
-	border-bottom: 3px solid var(--navActiveUnderlineColor);
+	border-bottom: 3px solid white;
 }
 
 /* hamberder menu */
@@ -118,7 +122,7 @@
 	.nav {
 		display: flex;
 		align-items: center;
-		/* display: none; */
+		gap: 20px;
 	}
 	.hamburgerWrapper {
 		display: none;
