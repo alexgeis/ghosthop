@@ -1,4 +1,8 @@
-declare module "*.mp4" {
-	const src: string;
-	export default src;
-}
+import { StaticImageData } from "next/image";
+
+type Card = {
+	imgSrc: StaticImageData | string;
+	name: string;
+	position: string;
+	id: number;
+};

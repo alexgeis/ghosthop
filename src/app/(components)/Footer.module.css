@@ -1,12 +1,11 @@
 .wrapper {
-	/* font-family: Poppins,sans-serif; */
 	opacity: 1;
 	margin-top: 0px;
-	position: absolute;
+	/* position: absolute; */
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 0 20px;
+	padding: 20px 0;
 	display: flex;
 	justify-content: center;
 }

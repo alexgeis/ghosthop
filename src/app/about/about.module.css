@@ -2,13 +2,47 @@
 	background-color: black;
 	width: 100%;
 	min-height: 100vh;
+	max-width: 900px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
 }
 
 .header {
 	font-size: 2rem;
 }
-
 .description {
 	color: white;
 	text-align: center;
+	padding: 0 20px;
+}
+
+.team {
+	width: 100%;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.card {
+	position: relative;
+	margin: 0 auto;
+}
+.cardImg > * {
+	border-radius: 15px;
+}
+.cardContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+.cardContentHead {
+	font-size: 1.5rem;
+}
+.cardContentPos {
+	color: aqua;
 }
