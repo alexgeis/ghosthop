@@ -18,7 +18,7 @@
 	height: 600px;
 }
 
-.content {
+.heroContent {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -27,16 +27,34 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
 	color: white;
 }
 
-.overlay {
+.heroOverlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heroBtn {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-radius: 15px;
+	background-color: black;
+}
+.heroBtn:hover {
+	border: 1px solid black;
+	color: black;
+	background-color: aqua;
 }
 
 @media only screen and (max-width: 600px) {

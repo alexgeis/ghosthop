@@ -82,8 +82,7 @@
 .hamburgerMenuActive {
 	position: absolute;
 	display: grid;
-	/* place-items: center; 
-	UNCOMMENT WHEN >1 menu items */
+	place-items: center;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -104,7 +103,7 @@
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	color: yellow;
+	color: white;
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);
