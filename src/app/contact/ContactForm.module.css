@@ -1,0 +1,42 @@
+.contactFormInput {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	height: 50px;
+	/* font-family: Varela Round, sans-serif; */
+	background-color: var(--playlistHolderGray);
+	background-color: var(--darkColor);
+	color: var(--whiteColor);
+	border: 1px solid var(--lessDarkColor);
+}
+
+.contactFormTextArea {
+	display: block;
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-family: Inter, sans-serif;
+	background-color: var(--grey);
+	background-color: var(--background);
+	color: var(--whiteColor);
+	border: 1px solid var(--lessDarkColor);
+}
+
+.contactFormSubmit {
+	margin-top: 20px;
+	background-color: var(--linkColor);
+	color: var(--whiteColor);
+	padding: 10px;
+	width: 300px;
+	border-radius: 5px;
+	border: none;
+	font-size: 22px;
+	width: 100%;
+	/* font-family: Varela Round, sans-serif; */
+}
