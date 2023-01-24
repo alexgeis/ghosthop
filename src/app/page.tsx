@@ -1,7 +1,6 @@
 import { Inter } from "@next/font/google";
 import styles from "./home.module.css";
 import Link from "next/link";
-// import djControllerVideo from "../assets/videos/dj-controller.mp4";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +10,6 @@ export default function Home() {
 			<section className={styles.heroWrapper}>
 				<div className={styles.heroOverlay}></div>
 				<video
-					// src={`/dj-controller.mp4`}
 					autoPlay
 					loop
 					muted

@@ -1,9 +1,24 @@
+"use client";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import styles from "./ContactForm.module.css";
+import { clean } from "./cleanPhone";
 
 type ContactFormProps = {
 	// onClick?: React.MouseEventHandler;
+};
+
+type formState = {
+	name: string;
+	email: string;
+	phone: string;
+	eventType: string;
+	eventDate: Date;
+
+	msg: string;
 };
 
 export const ContactForm = ({}: ContactFormProps): JSX.Element => {
@@ -26,18 +41,19 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
-		// test
-		alert(
-			`${form.name}(email: ${form.email}) writes the following: ${form.msg}`
-		);
+		// // test
+		// alert(
+		// 	`${form.name}(email: ${form.email}) writes the following: ${form.msg}`
+		// );
 		// validation
 		if (!form.name || !form.email || !form.msg) {
-			alert("Please ensure all fields contain content!");
+			alert("Please ensure all required fields contain content!");
+			return;
 		}
 		// send to email via EmailJS
 		emailjs
 			.sendForm(
-				"service_4zrp0vu",
+				"service_rhzu6kh",
 				"template_zfyylxo",
 				formRef.current!,
 				"ZD7n5BJBesxO0h3x4"
@@ -53,6 +69,8 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 
 		setForm(INITIAL_STATE);
 	};
+
+	const [startDate, setStartDate] = useState<Date | null>(new Date());
 
 	return (
 		<div>
@@ -84,6 +102,13 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					value={form.msg}
 					onChange={handleChange}
 				></textarea>
+				<DatePicker
+					selected={startDate}
+					onChange={(date: Date | null) => setStartDate(date)}
+					timeInputLabel="Time:"
+					dateFormat="MM/dd/yyyy h:mm aa"
+					showTimeInput
+				/>
 				<input
 					className={styles.contactFormSubmit}
 					type="submit"

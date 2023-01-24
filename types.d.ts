@@ -6,3 +6,5 @@ type Card = {
 	position: string;
 	id: number;
 };
+
+declare module "react-datepicker";

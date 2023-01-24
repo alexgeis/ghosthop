@@ -5,9 +5,9 @@ import { ContactFormTemplate } from "./ContactFormTemplate";
 export default function Contact() {
 	return (
 		<main className={styles.main}>
-			<ContactFormTemplate>
-				<ContactForm />
-			</ContactFormTemplate>
+			<ContactForm />
+			{/* <ContactFormTemplate>
+			</ContactFormTemplate> */}
 			{/* <div className={styles.description}>
 				Hold tight I&apos;m working on it, jesus...
 			</div> */}
