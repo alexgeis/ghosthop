@@ -36,6 +36,14 @@ export function NavBar() {
 				{/* GHOSTHOP */}
 			</div>
 			<div className={styles.nav}>
+				<div className={pathname == "/about" ? styles.navLinkActive : ""}>
+					<Link
+						href="about"
+						className={styles.navLink}
+					>
+						ABOUT
+					</Link>
+				</div>
 				<div className={pathname == "/contact" ? styles.navLinkActive : ""}>
 					<Link
 						href="contact"
@@ -60,20 +68,20 @@ export function NavBar() {
 						hamOpen ? styles.hamburgerMenuActive : ""
 					}`}
 				>
-					{/* <div
+					<div
 						className={
-							pathname == "/"
+							pathname == "/about"
 								? styles.hamburgerLinkActive
 								: styles.hamburgerLink
 						}
 					>
 						<Link
-							href="/"
+							href="/about"
 							onClick={() => closeMenu()}
 						>
-							HOME
+							ABOUT
 						</Link>
-					</div> */}
+					</div>
 					<div
 						className={
 							pathname == "/contact"
