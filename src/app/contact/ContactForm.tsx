@@ -16,18 +16,22 @@ type formState = {
 	email: string;
 	phone: string;
 	eventType: string;
-	eventDate: Date;
-
+	location: string;
 	msg: string;
+	refer: string;
 };
 
 export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 	const formRef = useRef<HTMLFormElement>(null);
 
-	const INITIAL_STATE = {
+	const INITIAL_STATE: formState = {
 		name: "",
 		email: "",
+		phone: "",
+		eventType: "",
+		location: "",
 		msg: "",
+		refer: "",
 	};
 	const [form, setForm] = useState(INITIAL_STATE);
 
@@ -41,10 +45,6 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
-		// // test
-		// alert(
-		// 	`${form.name}(email: ${form.email}) writes the following: ${form.msg}`
-		// );
 		// validation
 		if (!form.name || !form.email || !form.msg) {
 			alert("Please ensure all required fields contain content!");
@@ -73,7 +73,15 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 	const [startDate, setStartDate] = useState<Date | null>(new Date());
 
 	return (
-		<div>
+		<main className={styles.wrapper}>
+			<section className={styles.contactHeader}>
+				<h1>Make your next event... pretty good</h1>
+				<p>
+					Ghosthop will travel for events throughout Denver, Boulder, and the
+					surrounding areas.
+				</p>
+				<p>Get started now for a free consultation / quote</p>
+			</section>
 			<form
 				ref={formRef}
 				onSubmit={handleSubmit}
@@ -94,6 +102,44 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					value={form.email}
 					onChange={handleChange}
 				/>
+				<input
+					className={styles.contactFormInput}
+					type="text"
+					placeholder="phone: (800) 867-5309"
+					name="phone"
+					value={form.phone}
+					onChange={handleChange}
+				/>
+				<input
+					className={styles.contactFormInput}
+					type="text"
+					placeholder="Type of event"
+					name="eventType"
+					value={form.eventType}
+					onChange={handleChange}
+				/>
+				<label
+					htmlFor="datePick"
+					className={styles.datePickLabel}
+				>
+					Event Date &#38; Time
+					<DatePicker
+						selected={startDate}
+						onChange={(date: Date | null) => setStartDate(date)}
+						timeInputLabel="Time:"
+						dateFormat="MM/dd/yyyy h:mm aa"
+						showTimeInput
+						className={styles.contactDatePicker}
+					/>
+				</label>
+				<input
+					className={styles.contactFormInput}
+					type="text"
+					placeholder="Event Location"
+					name="location"
+					value={form.location}
+					onChange={handleChange}
+				/>
 				<textarea
 					className={styles.contactFormTextArea}
 					id="contactFormTextArea"
@@ -102,12 +148,13 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					value={form.msg}
 					onChange={handleChange}
 				></textarea>
-				<DatePicker
-					selected={startDate}
-					onChange={(date: Date | null) => setStartDate(date)}
-					timeInputLabel="Time:"
-					dateFormat="MM/dd/yyyy h:mm aa"
-					showTimeInput
+				<input
+					className={styles.contactFormInput}
+					type="text"
+					placeholder="How did you hear about us?"
+					name="refer"
+					value={form.refer}
+					onChange={handleChange}
 				/>
 				<input
 					className={styles.contactFormSubmit}
@@ -115,19 +162,6 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					value="Send"
 				/>
 			</form>
-		</div>
-		// <div
-		// 	className={`${styles.ContactForm} ${status === "active" ? styles.active : ""}`}
-		// 	onClick={onClick}
-		// >
-
-		// 	<form>
-		// 		<input className="Contact_input__fWz9j" type="text" placeholder="Your name" name="name">
-		// 		<input className="Contact_input__fWz9j" type="email" placeholder="Your e-mail" name="email">
-		// 		<textarea className="Contact_textarea__8QEdX" placeholder="Write your message" name="message"></textarea>
-		// 		<input className="Contact_submit__M6RFg" type="submit" value="Send">
-
-		// 	</form>
-		// </div>
+		</main>
 	);
 };
