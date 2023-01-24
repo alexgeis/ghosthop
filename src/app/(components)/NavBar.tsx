@@ -33,7 +33,6 @@ export function NavBar() {
 						priority
 					></Image>
 				</Link>
-				{/* GHOSTHOP */}
 			</div>
 			<div className={styles.nav}>
 				<div className={pathname == "/about" ? styles.navLinkActive : ""}>

@@ -44,16 +44,18 @@
 .navLink {
 	color: white;
 	font-size: 1.2rem;
+	border-bottom: 3px solid transparent;
 }
 .navLink:hover {
 	color: aqua;
 }
 .navLinkActive {
-	color: aqua;
 	padding-bottom: 5px;
-	/* margin: 0 20px; */
 	font-size: 110%;
 	border-bottom: 3px solid white;
+}
+.navLinkActive > * {
+	color: aqua;
 }
 
 /* hamberder menu */
