@@ -1,5 +1,5 @@
 import { Inter } from "@next/font/google";
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 import Link from "next/link";
 // import djControllerVideo from "../assets/videos/dj-controller.mp4";
 
