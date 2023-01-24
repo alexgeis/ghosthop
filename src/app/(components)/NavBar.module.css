@@ -46,10 +46,10 @@
 	font-size: 1.2rem;
 }
 .navLink:hover {
-	color: yellow;
+	color: aqua;
 }
 .navLinkActive {
-	color: yellow;
+	color: aqua;
 	padding-bottom: 5px;
 	/* margin: 0 20px; */
 	font-size: 110%;
@@ -83,11 +83,11 @@
 	position: absolute;
 	display: grid;
 	place-items: center;
+	gap: 20px;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	padding: 20vh 20px;
 	background-color: black;
 	text-align: center;
 	z-index: 1000 !important;
@@ -103,7 +103,7 @@
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	color: white;
+	color: aqua;
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);
@@ -123,8 +123,6 @@
 	}
 	.hamburgerWrapper {
 		display: none;
-		/* display: flex;
-        align-items: center;
-        margin: 0 20px; */
+		position: relative;
 	}
 }
