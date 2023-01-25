@@ -43,6 +43,14 @@ export function NavBar() {
 						ABOUT
 					</Link>
 				</div>
+				<div className={pathname == "/listen" ? styles.navLinkActive : ""}>
+					<Link
+						href="listen"
+						className={styles.navLink}
+					>
+						LISTEN
+					</Link>
+				</div>
 				<div className={pathname == "/contact" ? styles.navLinkActive : ""}>
 					<Link
 						href="contact"
@@ -79,6 +87,20 @@ export function NavBar() {
 							onClick={() => closeMenu()}
 						>
 							ABOUT
+						</Link>
+					</div>
+					<div
+						className={
+							pathname == "/listen"
+								? styles.hamburgerLinkActive
+								: styles.hamburgerLink
+						}
+					>
+						<Link
+							href="/listen"
+							onClick={() => closeMenu()}
+						>
+							LISTEN
 						</Link>
 					</div>
 					<div
