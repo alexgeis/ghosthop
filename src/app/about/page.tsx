@@ -58,13 +58,15 @@ export default function About() {
 
 	return (
 		<main className={styles.main}>
-			<h1 className={styles.header}>We&apos;re a team of DJ professionals</h1>
-			<p className={styles.description}>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-				pariatur? Tempora animi consequatur aliquid esse vero cupiditate veniam
-				temporibus debitis quas laboriosam iste sunt vitae maiores doloribus
-				provident, ab quis?
-			</p>
+			<section className={styles.headWrap}>
+				<h1 className={styles.header}>We&apos;re a team of DJ professionals</h1>
+				<p className={styles.description}>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+					pariatur? Tempora animi consequatur aliquid esse vero cupiditate
+					veniam temporibus debitis quas laboriosam iste sunt vitae maiores
+					doloribus provident, ab quis?
+				</p>
+			</section>
 			<section className={styles.team}>
 				{cardData.map((card) => {
 					return (
