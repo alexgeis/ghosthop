@@ -5,7 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import styles from "./ContactForm.module.css";
-import { clean } from "./cleanPhone";
+import { clean } from "./(helpers)/cleanPhone";
 
 type ContactFormProps = {
 	// onClick?: React.MouseEventHandler;

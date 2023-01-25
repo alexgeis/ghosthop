@@ -5,13 +5,16 @@
 	max-width: 900px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
 
+.headWrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 40px;
-}
 
+	margin-bottom: 40px;
+}
 .header {
 	font-size: 2rem;
 }
@@ -20,29 +23,17 @@
 	text-align: center;
 	padding: 0 20px;
 }
-
-.team {
-	width: 100%;
+.listenSection {
 	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .card {
-	position: relative;
+	height: 400px;
+	width: 320px;
 	margin: 0 auto;
 }
-.cardImg > * {
-	border-radius: 15px;
-}
-.cardContent {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 5px;
-}
-.cardContentHead {
-	font-size: 1.5rem;
-}
-.cardContentPos {
-	color: aqua;
+.listenSection > iframe {
+	border-radius: 12px;
+	border: 0px;
 }
