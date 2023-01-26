@@ -41,12 +41,32 @@
 	height: 400px;
 	width: 320px;
 	margin: 0 auto;
-}
-.listenSection > iframe {
-	border-radius: 12px;
 	border: 0px;
 }
+/* .listenSection > iframe {
+	border-radius: 12px;
+} */
 
 .mixSection {
 	display: grid;
+}
+.mixCard {
+	margin: 0 auto;
+	border: 0px;
+}
+.mixCard > div {
+	font-size: 10px;
+	color: #cccccc;
+	line-break: anywhere;
+	word-break: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+		Garuda, Verdana, Tahoma, sans-serif;
+	font-weight: 100;
+}
+.mixCard > div > a {
+	color: #cccccc;
+	text-decoration: none;
 }

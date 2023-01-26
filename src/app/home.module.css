@@ -58,7 +58,7 @@
 .heroBtn:hover {
 	border: 1px solid black;
 	color: black;
-	background-color: aqua;
+	background-color: #00ffff;
 }
 
 @media only screen and (max-width: 600px) {

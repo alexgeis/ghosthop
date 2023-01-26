@@ -1,4 +1,5 @@
 import styles from "./listen.module.css";
+import Link from "next/link";
 // import Image from "next/image";
 
 export default function Listen() {
@@ -40,7 +41,31 @@ export default function Listen() {
 			</section>
 			<h2>Mixes</h2>
 			<section className={styles.mixSection}>
-				<div className={styles.musicCard}></div>
+				<div className={styles.mixCard}>
+					<iframe
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1291838809&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						<Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+						>
+							enja
+						</Link>{" "}
+						·{" "}
+						<Link
+							href="https://soundcloud.com/enjaofficial/milkbar"
+							title="[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)"
+							target="_blank"
+						>
+							[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)
+						</Link>
+					</div>
+				</div>
 			</section>
 		</main>
 	);
