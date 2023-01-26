@@ -14,8 +14,8 @@ export default function Listen() {
 					doloribus provident, ab quis?
 				</p>
 			</section>
-			<section className={styles.listenSection}>
-				<div className={styles.card}>
+			<section className={styles.musicSection}>
+				<div className={styles.musicCard}>
 					<iframe
 						style={{ borderRadius: "12px", border: "0px" }}
 						src="https://open.spotify.com/embed/artist/0ETPddH5Oeip5NqDkdRf97?utm_source=generator"
@@ -26,7 +26,7 @@ export default function Listen() {
 						loading="lazy"
 					></iframe>
 				</div>
-				<div className={styles.card}>
+				<div className={styles.musicCard}>
 					<iframe
 						style={{ borderRadius: "12px", border: "0px" }}
 						src="https://open.spotify.com/embed/artist/41yri20ft220T9dx4A6mWa?utm_source=generator"
@@ -38,6 +38,7 @@ export default function Listen() {
 					></iframe>
 				</div>
 			</section>
+			<section className={styles.mixSection}>M</section>
 		</main>
 	);
 }

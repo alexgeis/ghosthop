@@ -22,12 +22,12 @@
 	color: white;
 	padding: 0 20px;
 }
-.listenSection {
+.musicSection {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	gap: 20px;
 }
-.card {
+.musicCard {
 	height: 400px;
 	width: 320px;
 	margin: 0 auto;
@@ -36,3 +36,7 @@
 	border-radius: 12px;
 	border: 0px;
 }
+/* 
+.mixSection {
+	
+} */
