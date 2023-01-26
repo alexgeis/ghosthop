@@ -28,7 +28,7 @@
 <h3 align="center">ghosthop</h3>
 
   <p align="center">
-    official website for ghosthop
+    official website for Ghosthop
     <br />
     <a href="https://github.com/alexgeis/ghosthop"><strong>Explore the docs »</strong></a>
     <br />
@@ -79,6 +79,13 @@ style="display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;"/></p></a> -->
+
+<p>Ghost hop is a DJ duo comprised of Benjamin Hopper and Alex Geis. <br> In addition to their DJing they also produce music:<p/>
+<ul>
+    <li><a href="https://www.instagram.com/ghosthopofficial/">Ghosthop Instagram</a></li>
+    <li>Hopper -- <a href="https://open.spotify.com/artist/0ETPddH5Oeip5NqDkdRf97?si=D9MFTiCDT4K9lINUVtQ3gQ">flawlosphere Spotify</a></li>
+    <li>Geis -- <a href="https://open.spotify.com/artist/41yri20ft220T9dx4A6mWa?si=XqPARj4JQ6W_yT4eKTHz8Q">Peace Pleasure Spotify</a></li>
+  </ul>
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
