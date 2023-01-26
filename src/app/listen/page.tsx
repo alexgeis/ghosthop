@@ -43,26 +43,80 @@ export default function Listen() {
 			<section className={styles.mixSection}>
 				<div className={styles.mixCard}>
 					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
 						width="100%"
 						height="166"
 						allow="autoplay"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1291838809&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
 					></iframe>
 					<div>
-						<Link
+						{/* <Link
 							href="https://soundcloud.com/enjaofficial"
 							title="enja"
 							target="_blank"
 						>
 							enja
 						</Link>{" "}
-						·{" "}
+						·{" "} */}
 						<Link
 							href="https://soundcloud.com/enjaofficial/milkbar"
 							title="[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)"
 							target="_blank"
 						>
-							[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)
+							[rotations | 06.20.2022] <br></br> Milk Bar (2010 ElectroPop Mix)
+						</Link>
+					</div>
+				</div>
+				<div className={styles.mixCard}>
+					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1029754588&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						{/* <Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+						>
+							enja
+						</Link>{" "}
+						·{" "} */}
+						<Link
+							href="https://soundcloud.com/enjaofficial/ancient-origins-of-primordials"
+							title="[rotations | 04.08.2021] - ancient origins of primordials (live mix)"
+							target="_blank"
+						>
+							[rotations | 04.08.2021] <br></br> ancient origins of primordials
+							(live mix)
+						</Link>
+					</div>
+				</div>
+				<div className={styles.mixCard}>
+					<iframe
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104399886&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						{/* <Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+						>
+							enja
+						</Link>{" "}
+						·{" "} */}
+						<Link
+							href="https://soundcloud.com/enjaofficial/escaping-the-cave"
+							title="[rotations | 08.11.2021] - escaping the cave (artistic mix)"
+							target="_blank"
+						>
+							[rotations | 08.11.2021] <br></br> escaping the cave (artistic
+							mix)
 						</Link>
 					</div>
 				</div>

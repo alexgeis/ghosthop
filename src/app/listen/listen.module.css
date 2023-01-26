@@ -1,5 +1,5 @@
 .main {
-	background-color: black;
+	background-color: var(--background-dark);
 	width: 100%;
 	min-height: 100vh;
 	max-width: 900px;
@@ -13,7 +13,7 @@
 .main h2 {
 	text-align: center;
 	width: 80px;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	border-bottom: 2px solid white;
 }
 
@@ -45,9 +45,11 @@
 	border: 0px;
 }
 
-/* .mixSection {
-
-} */
+.mixSection {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
 .mixCard {
 	margin: 0 auto;
 	border: 0px;
@@ -68,5 +70,5 @@
 .mixCard > div > a {
 	color: #cccccc;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1rem;
 }
