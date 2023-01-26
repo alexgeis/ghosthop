@@ -1,4 +1,4 @@
-Search and replace keywords: `deployed_link`, `product-screenshot`
+<!-- Search and replace keywords: `deployed_link`, `product-screenshot` -->
 
 <div id="top"></div>
 
@@ -21,8 +21,8 @@ Search and replace keywords: `deployed_link`, `product-screenshot`
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/alexgeis/ghosthop">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://ghosthop.vercel.app/">
+    <img src="./src/assets/logos/ghost-alone.jpeg" alt="ghosthop Logo" width="80" height="80">
   </a>
 
 <h3 align="center">ghosthop</h3>
@@ -33,7 +33,7 @@ Search and replace keywords: `deployed_link`, `product-screenshot`
     <a href="https://github.com/alexgeis/ghosthop"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a class="deployed_link" href="https://github.com/alexgeis/ghosthop">View Demo</a>
+    <a class="deployed_link" href="https://ghosthop.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/alexgeis/ghosthop/issues">Report Bug</a>
     ·
@@ -72,26 +72,30 @@ Search and replace keywords: `deployed_link`, `product-screenshot`
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-<a class="deployed_link" href="https://example.com">
+<!-- <a class="deployed_link" href="https://ghosthop.vercel.app/">
 <p align="center">
-<img id="product-screenshot" src="images/screenshot.png" alt="Product Name Screen Shot"
+<img id="product-screenshot" src="./src/assets/logos/ghost-alone.jpeg" alt="Product Name Screen Shot"
 style="display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;"/></p></a>
+    width: 60%;"/></p></a> -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 ### Built With
 
-- [Webpack](https://webpack.js.org/)
+<!-- - [Webpack](https://webpack.js.org/) -->
+
 - [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
-- [Node.js](https://nodejs.dev/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [MySQL](https://www.mysql.com/)
-- [JQuery](https://jquery.com)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel](https://vercel.com/)
+  <!-- - [Bootstrap](https://getbootstrap.com) -->
+  <!-- - [Node.js](https://nodejs.dev/) -->
+  <!-- - [Express](https://expressjs.com/) -->
+  <!-- - [MongoDB](https://www.mongodb.com/) -->
+  <!-- - [MySQL](https://www.mysql.com/) -->
+  <!-- - [JQuery](https://jquery.com) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -135,9 +139,9 @@ Packages used in this project: -->
    ```sh
    npm install
    ```
-3. DEVELOPMENT - run "npm start" to spin up the development server
+3. DEVELOPMENT - run "npm run dev" to spin up the development server
    ```sh
-   npm start
+   npm run dev
    ```
 4. PRODUCTION - run "npm build" to bundle the page per the Webpack settings
    ```sh
@@ -165,7 +169,7 @@ Packages used in this project: -->
 
 ## Usage
 
-Useful examples of how a project can be used. Additional screenshots, code examples, demos, and/or links to more resources.
+Learn more about DJ duo Ghosthop, listen to their music/mixes, and book them for your next event.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -175,10 +179,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+### MVP
+
+- [ ] All Soundcloud mixes on /listen page
+- [ ] Replace CSS hard-coded values with variables
+- [ ] Fix hamburger menu stacking on mobile
+
+### Plus Ultra
+
+- [ ] animations
+  - [ ] lazy / pre-pageload
+  - [ ] pageload
+  - [ ] section scroll
+- [ ] Light/Dark mode toggle
 
 See the [open issues](https://github.com/alexgeis/ghosthop/issues) for a full list of proposed features (and known issues).
 
@@ -232,7 +245,9 @@ Project Link: [https://github.com/alexgeis/ghosthop](https://github.com/alexgeis
 
 Helpful resources and kudos.
 
-- [Choose an Open Source License](https://choosealicense.com)
+- [Next.js Beta Docs](https://beta.nextjs.org/docs)
+- [React.js Beta Docs](https://beta.reactjs.org/)
+<!-- - [Choose an Open Source License](https://choosealicense.com)
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
@@ -240,7 +255,7 @@ Helpful resources and kudos.
 - [Markdown Studio](https://readme.so/editor)
 - []()
 - []()
-- []()
+- []() -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
