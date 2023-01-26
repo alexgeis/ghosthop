@@ -66,7 +66,9 @@ export default function Listen() {
 							title="[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)"
 							target="_blank"
 						>
-							[rotations | 06.20.2022] <br></br> Milk Bar (2010 ElectroPop Mix)
+							[rotations | 06.20.2022]
+							<br></br>
+							Milk Bar (2010 ElectroPop Mix)
 						</Link>
 					</div>
 				</div>
@@ -92,13 +94,15 @@ export default function Listen() {
 							title="[rotations | 04.08.2021] - ancient origins of primordials (live mix)"
 							target="_blank"
 						>
-							[rotations | 04.08.2021] <br></br> ancient origins of primordials
-							(live mix)
+							[rotations | 04.08.2021]
+							<br></br>
+							ancient origins of primordials (live mix)
 						</Link>
 					</div>
 				</div>
 				<div className={styles.mixCard}>
 					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
 						width="100%"
 						height="166"
 						allow="autoplay"
@@ -118,8 +122,9 @@ export default function Listen() {
 							title="[rotations | 08.11.2021] - escaping the cave (artistic mix)"
 							target="_blank"
 						>
-							[rotations | 08.11.2021] <br></br> escaping the cave (artistic
-							mix)
+							[rotations | 08.11.2021]
+							<br></br>
+							escaping the cave (artistic mix)
 						</Link>
 					</div>
 				</div>

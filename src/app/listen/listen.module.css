@@ -71,4 +71,6 @@
 	color: #cccccc;
 	text-decoration: none;
 	font-size: 1rem;
+	overflow-wrap: break-word;
+	white-space: pre-wrap;
 }
