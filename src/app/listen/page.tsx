@@ -2,6 +2,9 @@ import styles from "./listen.module.css";
 import Link from "next/link";
 // import Image from "next/image";
 
+// REFERENCE FOR SOUNDCLOUD
+// https://soundcloud.com/enjaofficial
+
 export default function Listen() {
 	return (
 		<main className={styles.main}>
