@@ -32,6 +32,7 @@
 	color: white;
 	padding: 0 20px;
 }
+
 .musicSection {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -43,16 +44,14 @@
 	margin: 0 auto;
 	border: 0px;
 }
-/* .listenSection > iframe {
-	border-radius: 12px;
-} */
 
-.mixSection {
-	display: grid;
-}
+/* .mixSection {
+
+} */
 .mixCard {
 	margin: 0 auto;
 	border: 0px;
+	width: 70%;
 }
 .mixCard > div {
 	font-size: 10px;
@@ -69,4 +68,5 @@
 .mixCard > div > a {
 	color: #cccccc;
 	text-decoration: none;
+	font-size: 2rem;
 }
