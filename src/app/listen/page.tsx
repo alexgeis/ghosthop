@@ -1,6 +1,5 @@
 import styles from "./listen.module.css";
-import Image from "next/image";
-import flawloPic from "../../assets/images/flawlo.jpeg";
+// import Image from "next/image";
 
 export default function Listen() {
 	return (
@@ -14,6 +13,7 @@ export default function Listen() {
 					doloribus provident, ab quis?
 				</p>
 			</section>
+			<h2>Music</h2>
 			<section className={styles.musicSection}>
 				<div className={styles.musicCard}>
 					<iframe
@@ -38,7 +38,10 @@ export default function Listen() {
 					></iframe>
 				</div>
 			</section>
-			<section className={styles.mixSection}>M</section>
+			<h2>Mixes</h2>
+			<section className={styles.mixSection}>
+				<div className={styles.musicCard}></div>
+			</section>
 		</main>
 	);
 }

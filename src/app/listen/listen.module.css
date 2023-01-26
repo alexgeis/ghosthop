@@ -5,6 +5,16 @@
 	max-width: 900px;
 	padding: 0 20px;
 	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.main h2 {
+	text-align: center;
+	width: 80px;
+	margin: 0 auto;
+	border-bottom: 2px solid white;
 }
 
 .headWrap {
@@ -36,7 +46,7 @@
 	border-radius: 12px;
 	border: 0px;
 }
-/* 
+
 .mixSection {
-	
-} */
+	display: grid;
+}
