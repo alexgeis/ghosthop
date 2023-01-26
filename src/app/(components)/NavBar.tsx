@@ -18,7 +18,7 @@ export function NavBar() {
 	};
 
 	return (
-		<div className={styles.wrapper}>
+		<header className={styles.wrapper}>
 			<div className={styles.logoWrapper}>
 				<Link
 					href="/"
@@ -34,7 +34,7 @@ export function NavBar() {
 					></Image>
 				</Link>
 			</div>
-			<div className={styles.nav}>
+			<nav className={styles.nav}>
 				<div className={pathname == "/about" ? styles.navLinkActive : ""}>
 					<Link
 						href="about"
@@ -59,7 +59,7 @@ export function NavBar() {
 						CONTACT
 					</Link>
 				</div>
-			</div>
+			</nav>
 			{/* HAMBERDER */}
 			<div className={styles.hamburgerWrapper}>
 				<div
@@ -70,7 +70,7 @@ export function NavBar() {
 					<div className={`${hamOpen ? styles.hamburgerLineTwo : ""}`}></div>
 					<div className={`${hamOpen ? styles.hamburgerLineThree : ""}`}></div>
 				</div>
-				<div
+				<nav
 					className={`${styles.hamburgerMenu} ${
 						hamOpen ? styles.hamburgerMenuActive : ""
 					}`}
@@ -117,8 +117,8 @@ export function NavBar() {
 							CONTACT
 						</Link>
 					</div>
-				</div>
+				</nav>
 			</div>
-		</div>
+		</header>
 	);
 }
