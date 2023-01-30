@@ -28,7 +28,7 @@
 <h3 align="center">ghosthop</h3>
 
   <p align="center">
-    official website for Ghosthop
+    Ffficial website of Ghosthop
     <br />
     <a href="https://github.com/alexgeis/ghosthop"><strong>Explore the docs »</strong></a>
     <br />
@@ -150,7 +150,11 @@ Packages used in this project: -->
    ```sh
    npm run dev
    ```
-4. PRODUCTION - run "npm build" to bundle the page per the Webpack settings
+4. PRODUCTION PREVIEW - run "npm start" to preview the production render
+   ```sh
+   npm start
+   ```
+5. PRODUCTION BUILD- run "npm build" to bundle the page per the Webpack settings
    ```sh
    npm build
    ```
