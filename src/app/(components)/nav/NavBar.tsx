@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Image from "next/image";
 import Link from "next/link";
+import Hamburger from "./Hamburger";
 
 import { signIn, signOut, useSession } from "next-auth/react";
 
@@ -14,14 +15,6 @@ export function NavBar() {
 	const loading = status === "loading";
 
 	const pathname = usePathname();
-
-	const [hamOpen, setHamOpen] = useState(false);
-	const hamburgerMenuToggle = () => {
-		setHamOpen(!hamOpen);
-	};
-	const closeMenu = () => {
-		setHamOpen(false);
-	};
 
 	return (
 		<header className={styles.wrapper}>
@@ -108,64 +101,7 @@ export function NavBar() {
 				</div>
 			</nav>
 			{/* HAMBERDER */}
-			<div className={styles.hamburgerWrapper}>
-				<div
-					className={styles.hamburgerBox}
-					onClick={hamburgerMenuToggle}
-				>
-					<div className={`${hamOpen ? styles.hamburgerLineOne : ""}`}></div>
-					<div className={`${hamOpen ? styles.hamburgerLineTwo : ""}`}></div>
-					<div className={`${hamOpen ? styles.hamburgerLineThree : ""}`}></div>
-				</div>
-				<nav
-					className={`${styles.hamburgerMenu} ${
-						hamOpen ? styles.hamburgerMenuActive : ""
-					}`}
-				>
-					<div
-						className={
-							pathname == "/about"
-								? styles.hamburgerLinkActive
-								: styles.hamburgerLink
-						}
-					>
-						<Link
-							href="/about"
-							onClick={() => closeMenu()}
-						>
-							ABOUT
-						</Link>
-					</div>
-					<div
-						className={
-							pathname == "/listen"
-								? styles.hamburgerLinkActive
-								: styles.hamburgerLink
-						}
-					>
-						<Link
-							href="/listen"
-							onClick={() => closeMenu()}
-						>
-							LISTEN
-						</Link>
-					</div>
-					<div
-						className={
-							pathname == "/contact"
-								? styles.hamburgerLinkActive
-								: styles.hamburgerLink
-						}
-					>
-						<Link
-							href="/contact"
-							onClick={() => closeMenu()}
-						>
-							CONTACT
-						</Link>
-					</div>
-				</nav>
-			</div>
+			<Hamburger pathname={pathname} />
 		</header>
 	);
 }
