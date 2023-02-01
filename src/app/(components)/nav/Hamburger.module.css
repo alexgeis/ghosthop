@@ -27,8 +27,10 @@
 	gap: 20px;
 	top: 0;
 	left: 0;
+	transition: opacity 600ms ease-in-out;
 	width: 100vw;
-	height: 100vh;
+	padding: 130px;
+	height: 50vh;
 	background-color: var(--background-dark);
 	text-align: center;
 	z-index: 1000 !important;

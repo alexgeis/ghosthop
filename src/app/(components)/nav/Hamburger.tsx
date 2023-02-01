@@ -20,7 +20,9 @@ export default function Hamburger({ pathname, pages }: hamburgerProps) {
 	return (
 		<div className={styles.hamburgerWrapper}>
 			<div
-				className={styles.hamburgerBox}
+				className={`${styles.hamburgerBox} ${
+					hamOpen ? styles.hamburgerBoxActive : ""
+				}`}
 				onClick={hamburgerMenuToggle}
 			>
 				<div className={`${hamOpen ? styles.hamburgerLineOne : ""}`}></div>
