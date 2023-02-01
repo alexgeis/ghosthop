@@ -1,8 +1,8 @@
 .main {
-	background-color: black;
+	background-color: var(--background-dark);
 }
 
 .description {
-	color: white;
+	color: var(--light-color);
 	text-align: center;
 }

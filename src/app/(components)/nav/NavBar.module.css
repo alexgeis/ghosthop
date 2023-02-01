@@ -18,11 +18,12 @@
 	align-items: center;
 	z-index: 1002;
 	border-radius: 15px;
-	box-shadow: 0 0 15px 2px #48abe0;
+	box-shadow: 0 0 15px 2px var(--highlight-blue);
 	transition: all 0.5s ease;
 }
 .logoWrapper:hover {
-	box-shadow: 0 0 25px 3px #48abe0;
+	cursor: pointer;
+	box-shadow: 0 0 25px 3px var(--highlight-blue);
 	transition: all 0.5s ease;
 }
 .logoWrapper:active {
@@ -30,17 +31,13 @@
 }
 
 .logoLink {
-	color: #e6e6e6;
+	color: var(--light-color);
 	font-weight: 700;
 	font-size: 32px;
 
-	text-shadow: 0 0 white, 0 1.5em purple;
+	text-shadow: 0 0 var(--light-color), 0 1.5em var(--highlight-purple);
 	overflow: hidden;
 	transition: 0.4s;
-}
-.logoLink:hover {
-	text-shadow: 0 -1.5em yellow, 0 0 purple;
-	cursor: pointer;
 }
 .logo {
 	background-size: contain;
@@ -53,20 +50,20 @@
 	margin-right: 20px;
 }
 .navLink {
-	color: white;
+	color: var(--light-color);
 	font-size: 1.2rem;
 	border-bottom: 3px solid transparent;
 }
 .navLink:hover {
-	color: aqua;
+	color: var(--highlight-blue);
 }
 .navLinkActive {
 	padding-bottom: 2px;
 	font-size: 110%;
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid var(--light-color);
 }
 .navLinkActive > * {
-	color: aqua;
+	color: var(--highlight-blue);
 }
 
 /* hamberder menu */
@@ -84,7 +81,7 @@
 .hamburgerBox div {
 	width: 35px;
 	height: 5px;
-	background-color: white;
+	background-color: var(--light-color);
 	margin: 6px 0;
 	transition: 0.4s;
 }
@@ -110,13 +107,13 @@
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	color: white;
+	color: var(--light-color);
 }
 .hamburgerLinkActive {
 	opacity: 1;
 	display: block;
 	font-size: 30px;
-	color: aqua;
+	color: var(--highlight-blue);
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);
@@ -190,7 +187,7 @@
 	float: left;
 	height: 2.8rem;
 	width: 2.8rem;
-	background-color: white;
+	background-color: var(--light-color);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -212,9 +209,9 @@
 }
 
 .buttonPrimary {
-	background-color: #48abe0;
-	border-color: #48abe0;
-	color: #fff;
+	background-color: var(--highlight-blue);
+	border-color: var(--highlight-blue);
+	color: var(--background-dark);
 	text-decoration: none;
 	padding: 0.7rem 1.4rem;
 }

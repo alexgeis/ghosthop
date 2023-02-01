@@ -18,7 +18,7 @@
 	font-size: 2rem;
 }
 .description {
-	color: white;
+	color: var(--light-color);
 	padding: 0 20px;
 }
 
@@ -45,5 +45,5 @@
 	font-size: 1.5rem;
 }
 .cardContentPos {
-	color: aqua;
+	color: var(--highlight-blue);
 }

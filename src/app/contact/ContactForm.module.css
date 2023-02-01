@@ -18,9 +18,9 @@
 	margin: 30px 0;
 	font-size: 18px;
 	height: 50px;
-	background-color: black;
-	color: white;
-	border: 1px solid #272727;
+	background-color: var(--background-dark);
+	color: var(--light-color);
+	border: 1px solid var(--form-outline-gray);
 }
 
 .contactFormTextArea {
@@ -32,10 +32,10 @@
 	margin: 20px 0 10px;
 	font-size: 18px;
 	font-family: Inter, sans-serif;
-	color: white;
-	background-color: black;
-	color: white;
-	border: 1px solid #272727;
+	color: var(--light-color);
+	background-color: var(--background-dark);
+	color: var(--light-color);
+	border: 1px solid var(--form-outline-gray);
 }
 
 .datePickLabel {
@@ -45,17 +45,17 @@
 }
 .contactDatePicker {
 	appearance: none;
-	border-color: black;
+	border-color: var(--background-dark);
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
-	background-color: black;
+	background-color: var(--background-dark);
 }
 
 .contactFormSubmit {
 	margin-top: 20px;
-	background-color: white;
-	color: black;
+	background-color: var(--light-color);
+	color: var(--background-dark);
 	border-radius: 10px;
 	padding: 10px;
 	width: 300px;

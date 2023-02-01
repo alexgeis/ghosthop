@@ -1,9 +1,9 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
-import githubLogo from "../../assets/icons/footer/github-mark.svg";
+import githubLogo from "../../../assets/icons/footer/github-mark.svg";
 // import linkedInLogo from "../../assets/icons/footer/linkedin-round-icon.svg";
-import instagramLogo from "../../assets/icons/footer/Instagram_Glyph_Gradient_RGB.svg";
-import spotifyLogo from "../../assets/icons/footer/spotify-icon.svg";
+import instagramLogo from "../../../assets/icons/footer/Instagram_Glyph_Gradient_RGB.svg";
+import spotifyLogo from "../../../assets/icons/footer/spotify-icon.svg";
 
 export function Footer() {
 	return (

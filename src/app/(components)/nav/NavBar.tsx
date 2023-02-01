@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-import ghosthopLogo from "../../assets/logos/ghost-alone.jpeg";
+import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 
