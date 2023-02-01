@@ -5,7 +5,7 @@
 	top: 0;
 	max-width: 1200px;
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
 	margin: 0 auto;
 
 	display: flex;
@@ -16,6 +16,7 @@
 .logoWrapper {
 	display: flex;
 	align-items: center;
+	margin-left: 60px;
 	z-index: 1002;
 	border-radius: 15px;
 	box-shadow: 0 0 15px 2px var(--highlight-blue);

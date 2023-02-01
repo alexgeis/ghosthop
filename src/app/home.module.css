@@ -39,6 +39,7 @@
 }
 .heroContent p {
 	font-size: 2rem;
+	margin-bottom: 20px;
 }
 
 .heroOverlay {
@@ -56,6 +57,7 @@
 	appearance: button;
 
 	text-decoration: none;
+	font-size: 2rem;
 	padding: 10px 20px;
 	border: 1px solid var(--light-color);
 	border-radius: 15px;

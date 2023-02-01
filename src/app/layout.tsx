@@ -3,6 +3,14 @@ import { NavBar } from "./(components)/nav/NavBar";
 import { Footer } from "./(components)/footer/Footer";
 import Providers from "./providers";
 
+// manually delay for demo
+// const MemoryGame = lazy(() => delayForDemo(import("./logic/MemoryGame")));
+// function delayForDemo(promise: any) {
+// 	return new Promise((resolve) => {
+// 		setTimeout(resolve, 2000);
+// 	}).then(() => promise);
+// }
+
 export default function RootLayout({
 	children,
 }: {

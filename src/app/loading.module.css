@@ -1,8 +1,28 @@
 .main {
 	background-color: var(--background-dark);
+	min-width: 300px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
 }
 
 .description {
 	color: var(--light-color);
 	text-align: center;
+}
+
+.spinner {
+	position: relative;
+	animation: load-spin 2s ease-in-out 0s infinite;
+}
+
+@keyframes load-spin {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 360;
+	}
 }
