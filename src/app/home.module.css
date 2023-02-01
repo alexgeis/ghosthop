@@ -34,6 +34,12 @@
 	gap: 10px;
 	color: white;
 }
+.heroContent h1 {
+	font-size: 6rem;
+}
+.heroContent p {
+	font-size: 2rem;
+}
 
 .heroOverlay {
 	position: absolute;
@@ -59,6 +65,15 @@
 	border: 1px solid black;
 	color: black;
 	background-color: #00ffff;
+}
+
+@media only screen and (max-width: 750px) {
+	.heroContent h1 {
+		font-size: 3rem;
+	}
+	.heroContent p {
+		font-size: 1rem;
+	}
 }
 
 @media only screen and (max-width: 600px) {
