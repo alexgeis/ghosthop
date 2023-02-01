@@ -1,7 +1,7 @@
 import styles from "./about.module.css";
 import Image from "next/image";
 import flawloPic from "../../assets/images/flawlo.jpeg";
-import { Card } from "types";
+import { Card } from "types/types";
 
 export default function About() {
 	const cardData: Card[] = [

@@ -29,8 +29,8 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"types.d.ts",
-		"process.d.ts",
+		"types/types.d.ts",
+		"types/process.d.ts",
 		"types/next-auth.d.ts"
 	],
 	"exclude": ["node_modules"]
