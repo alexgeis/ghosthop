@@ -23,6 +23,7 @@ type formState = {
 
 export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 	const formRef = useRef<HTMLFormElement>(null);
+	const [startDate, setStartDate] = useState<Date | null>(new Date());
 
 	const INITIAL_STATE: formState = {
 		name: "",
@@ -70,8 +71,6 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 		setForm(INITIAL_STATE);
 	};
 
-	const [startDate, setStartDate] = useState<Date | null>(new Date());
-
 	return (
 		<main className={styles.wrapper}>
 			<section className={styles.contactHeader}>
@@ -85,77 +84,123 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 			<form
 				ref={formRef}
 				onSubmit={handleSubmit}
+				className={styles.form}
 			>
-				<input
-					className={styles.contactFormInput}
-					type="text"
-					placeholder="Your name"
-					name="name"
-					value={form.name}
-					onChange={handleChange}
-				/>
-				<input
-					className={styles.contactFormInput}
-					type="email"
-					placeholder="Your e-mail"
-					name="email"
-					value={form.email}
-					onChange={handleChange}
-				/>
-				<input
-					className={styles.contactFormInput}
-					type="text"
-					placeholder="phone: (800) 867-5309"
-					name="phone"
-					value={form.phone}
-					onChange={handleChange}
-				/>
-				<input
-					className={styles.contactFormInput}
-					type="text"
-					placeholder="Type of event"
-					name="eventType"
-					value={form.eventType}
-					onChange={handleChange}
-				/>
-				<label
-					htmlFor="datePick"
-					className={styles.datePickLabel}
-				>
-					Event Date &#38; Time
-					<DatePicker
-						selected={startDate}
-						onChange={(date: Date | null) => setStartDate(date)}
-						timeInputLabel="Time:"
-						dateFormat="MM/dd/yyyy h:mm aa"
-						showTimeInput
-						className={styles.contactDatePicker}
+				<div className={styles.inputWrapper}>
+					<label htmlFor="name">Full Name: *</label>
+					<input
+						className={styles.contactFormInput}
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Bonanza Jellybean"
+						value={form.name}
+						onChange={handleChange}
+						required
 					/>
-				</label>
-				<input
-					className={styles.contactFormInput}
-					type="text"
-					placeholder="Event Location"
-					name="location"
-					value={form.location}
-					onChange={handleChange}
-				/>
-				<textarea
-					className={styles.contactFormTextArea}
-					id="contactFormTextArea"
-					placeholder="Write your message"
-					name="msg"
-					value={form.msg}
-					onChange={handleChange}
-				></textarea>
-				<input
-					className={styles.contactFormInput}
-					type="text"
-					placeholder="How did you hear about us?"
-					name="refer"
-					value={form.refer}
-					onChange={handleChange}
-				/>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.inputWrapper}>
+					<label htmlFor="email">Email: *</label>
+					<input
+						className={styles.contactFormInput}
+						type="email"
+						placeholder="hello@youregreat.com"
+						name="email"
+						value={form.email}
+						onChange={handleChange}
+						required
+					/>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.inputWrapper}>
+					<label htmlFor="phone">Phone: *</label>
+					<input
+						className={styles.contactFormInput}
+						name="phone"
+						type="tel"
+						// pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // xxx-xxx-xxxx
+						pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$"
+						placeholder="(800) 867-5309"
+						value={form.phone}
+						onChange={handleChange}
+						required
+					/>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.inputWrapper}>
+					<label htmlFor="eventType">Event Type: *</label>
+					<input
+						className={styles.contactFormInput}
+						type="text"
+						placeholder="Briefly describe your event..."
+						name="eventType"
+						value={form.eventType}
+						onChange={handleChange}
+						required
+					/>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.inputWrapper}>
+					<label
+						htmlFor="datePick"
+						className={styles.datePickLabel}
+					>
+						Event Date &#38; Time
+					</label>
+					<div className={styles.contactDateWrapper}>
+						<DatePicker
+							selected={startDate}
+							onChange={(date: Date | null) => setStartDate(date)}
+							timeInputLabel="Time:"
+							dateFormat="MM/dd/yyyy h:mm aa"
+							showTimeInput
+							className={styles.contactDatePicker}
+							required
+						/>
+					</div>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.inputWrapper}>
+					<label htmlFor="location">Location: *</label>
+
+					<input
+						className={styles.contactFormInput}
+						type="text"
+						placeholder="Rubber Rose Ranch"
+						name="location"
+						value={form.location}
+						onChange={handleChange}
+						required
+					/>
+					<span className={styles.validity}></span>
+				</div>
+				<div className={styles.msgInputWrapper}>
+					<label htmlFor="contactFormTextArea">Additional Details: *</label>
+					<textarea
+						className={styles.contactFormTextArea}
+						id="contactFormTextArea"
+						placeholder="Write your message"
+						name="msg"
+						value={form.msg}
+						onChange={handleChange}
+						required
+					></textarea>
+				</div>
+				<div className={styles.msgInputWrapper}>
+					<label htmlFor="refer">How did you hear about us?: *</label>
+					<input
+						className={styles.contactFormInput}
+						type="text"
+						id="refer"
+						placeholder="Referral, Google Search, etc."
+						name="refer"
+						value={form.refer}
+						onChange={handleChange}
+						required
+					/>
+				</div>
+
 				<input
 					className={styles.contactFormSubmit}
 					type="submit"

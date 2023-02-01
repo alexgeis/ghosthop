@@ -43,6 +43,8 @@
 	--light-color: #fffdfa;
 	--highlight-blue: #00ffff;
 	--highlight-purple: #00ffff;
+
+	--heroOverlay: rgba(0, 0, 0, 0.5);
 	--form-outline-gray: #272727;
 }
 

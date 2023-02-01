@@ -10,6 +10,36 @@
 	gap: 10px;
 }
 
+.form label {
+	font-size: 1rem;
+}
+
+.inputWrapper {
+	display: grid;
+	grid-template-columns: minmax(min-content, 100px) 1fr 10px;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+}
+
+.validity {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+input:invalid + .validity::after {
+	position: absolute;
+	content: "✖";
+	padding-left: 5px;
+	color: #8b0000;
+}
+
+input:valid + .validity::after {
+	position: absolute;
+	content: "✓";
+	padding-left: 5px;
+	color: #009000;
+}
+
 .contactFormInput {
 	display: block;
 	width: 100%;
@@ -21,6 +51,11 @@
 	background-color: var(--background-dark);
 	color: var(--light-color);
 	border: 1px solid var(--form-outline-gray);
+}
+
+.msgInputWrapper {
+	position: relative;
+	margin-bottom: 20px;
 }
 
 .contactFormTextArea {
@@ -39,17 +74,26 @@
 }
 
 .datePickLabel {
-	font-size: 1.3rem;
 	padding: 1px 0;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+}
+.contactDateWrapper {
+	margin: 0 auto;
+	width: 50%;
 }
 .contactDatePicker {
 	appearance: none;
-	border-color: var(--background-dark);
+	border-color: transparent;
 	width: 100%;
 	text-align: center;
+	padding: 5px 0;
 	margin: 0 auto;
-	background-color: var(--background-dark);
+	background-color: var(--form-outline-gray);
+	border-radius: 10px;
+}
+.contactDatePicker:hover {
+	border: solid 1px var(--light-color);
+	box-shadow: 0px 0px 2px 2px var(--light-color);
 }
 
 .contactFormSubmit {
@@ -63,6 +107,12 @@
 	border: none;
 	font-size: 22px;
 	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.inputWrapper {
+		display: block;
+	}
 }
 
 /* FOLLOW GUIDE BELOW FOR VALIDATION STYLING */
