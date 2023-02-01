@@ -5,9 +5,10 @@ import Link from "next/link";
 
 type hamburgerProps = {
 	pathname: string | null;
+	pages: string[];
 };
 
-export default function Hamburger({ pathname }: hamburgerProps) {
+export default function Hamburger({ pathname, pages }: hamburgerProps) {
 	const [hamOpen, setHamOpen] = useState(false);
 	const hamburgerMenuToggle = () => {
 		setHamOpen(!hamOpen);
@@ -31,48 +32,25 @@ export default function Hamburger({ pathname }: hamburgerProps) {
 					hamOpen ? styles.hamburgerMenuActive : ""
 				}`}
 			>
-				<div
-					className={
-						pathname == "/about"
-							? styles.hamburgerLinkActive
-							: styles.hamburgerLink
-					}
-				>
-					<Link
-						href="/about"
-						onClick={() => closeMenu()}
-					>
-						ABOUT
-					</Link>
-				</div>
-				<div
-					className={
-						pathname == "/listen"
-							? styles.hamburgerLinkActive
-							: styles.hamburgerLink
-					}
-				>
-					<Link
-						href="/listen"
-						onClick={() => closeMenu()}
-					>
-						LISTEN
-					</Link>
-				</div>
-				<div
-					className={
-						pathname == "/contact"
-							? styles.hamburgerLinkActive
-							: styles.hamburgerLink
-					}
-				>
-					<Link
-						href="/contact"
-						onClick={() => closeMenu()}
-					>
-						CONTACT
-					</Link>
-				</div>
+				{pages.map((page: string, i: number) => {
+					return (
+						<div
+							className={
+								pathname == `/${page}`
+									? styles.hamburgerLinkActive
+									: styles.hamburgerLink
+							}
+							key={i}
+						>
+							<Link
+								href={`${page}`}
+								onClick={() => closeMenu()}
+							>
+								{page.toUpperCase()}
+							</Link>
+						</div>
+					);
+				})}
 			</nav>
 		</div>
 	);

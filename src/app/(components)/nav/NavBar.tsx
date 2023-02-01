@@ -16,6 +16,8 @@ export function NavBar() {
 
 	const pathname = usePathname();
 
+	const pages = ["about", "listen", "contact"];
+
 	return (
 		<header className={styles.wrapper}>
 			<noscript>
@@ -38,30 +40,21 @@ export function NavBar() {
 				</Link>
 			</div>
 			<nav className={styles.nav}>
-				<div className={pathname == "/about" ? styles.navLinkActive : ""}>
-					<Link
-						href="about"
-						className={styles.navLink}
-					>
-						ABOUT
-					</Link>
-				</div>
-				<div className={pathname == "/listen" ? styles.navLinkActive : ""}>
-					<Link
-						href="listen"
-						className={styles.navLink}
-					>
-						LISTEN
-					</Link>
-				</div>
-				<div className={pathname == "/contact" ? styles.navLinkActive : ""}>
-					<Link
-						href="contact"
-						className={styles.navLink}
-					>
-						CONTACT
-					</Link>
-				</div>
+				{pages.map((page: string, i: number) => {
+					return (
+						<div
+							className={pathname == `/${page}` ? styles.navLinkActive : ""}
+							key={i}
+						>
+							<Link
+								href={`${page}`}
+								className={styles.navLink}
+							>
+								{page.toUpperCase()}
+							</Link>
+						</div>
+					);
+				})}
 				{/* LOGIN / LOGOUT */}
 				<div className={styles.signedInStatus}>
 					<p
@@ -101,7 +94,10 @@ export function NavBar() {
 				</div>
 			</nav>
 			{/* HAMBERDER */}
-			<Hamburger pathname={pathname} />
+			<Hamburger
+				pathname={pathname}
+				pages={pages}
+			/>
 		</header>
 	);
 }
