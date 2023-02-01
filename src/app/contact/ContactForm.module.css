@@ -1,6 +1,7 @@
 .wrapper {
 	max-width: 600px;
 	margin: 0 auto;
+	padding: 10px 20px;
 }
 
 .contactHeader {
@@ -8,6 +9,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
+	margin-bottom: 20px;
 }
 
 .form label {
@@ -16,7 +18,7 @@
 
 .inputWrapper {
 	display: grid;
-	grid-template-columns: minmax(min-content, 100px) 1fr 10px;
+	grid-template-columns: minmax(min-content, 100px) 1fr;
 	gap: 10px;
 	align-items: center;
 	position: relative;
@@ -25,6 +27,9 @@
 .validity {
 	padding-right: 20px;
 	padding-bottom: 20px;
+	position: absolute;
+	top: 50;
+	right: 10px;
 }
 input:invalid + .validity::after {
 	position: absolute;
@@ -73,22 +78,31 @@ input:valid + .validity::after {
 	border: 1px solid var(--form-outline-gray);
 }
 
+.inputWrapperDate {
+	display: grid;
+	grid-template-columns: minmax(min-content, 100px) 1fr;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+	margin: 20px 0;
+}
+
 .datePickLabel {
 	padding: 1px 0;
 	/* margin-bottom: 20px; */
 }
 .contactDateWrapper {
-	margin: 0 auto;
-	width: 50%;
+	display: flex;
+	width: 100%;
 }
 .contactDatePicker {
 	appearance: none;
-	border-color: transparent;
 	width: 100%;
 	text-align: center;
 	padding: 5px 0;
 	margin: 0 auto;
 	background-color: var(--form-outline-gray);
+	border: solid 1px transparent;
 	border-radius: 10px;
 }
 .contactDatePicker:hover {
@@ -109,9 +123,16 @@ input:valid + .validity::after {
 	width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	.inputWrapper {
 		display: block;
+	}
+	.validity {
+		padding-right: 20px;
+		padding-bottom: 20px;
+		position: absolute;
+		top: 65px;
+		right: 10px;
 	}
 }
 

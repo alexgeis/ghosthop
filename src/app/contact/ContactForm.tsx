@@ -141,12 +141,12 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					/>
 					<span className={styles.validity}></span>
 				</div>
-				<div className={styles.inputWrapper}>
+				<div className={styles.inputWrapperDate}>
 					<label
 						htmlFor="datePick"
 						className={styles.datePickLabel}
 					>
-						Event Date &#38; Time
+						Event Date <br></br>&#38; Time
 					</label>
 					<div className={styles.contactDateWrapper}>
 						<DatePicker
@@ -159,7 +159,7 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 							required
 						/>
 					</div>
-					<span className={styles.validity}></span>
+					{/* <span className={styles.validity}></span> */}
 				</div>
 				<div className={styles.inputWrapper}>
 					<label htmlFor="location">Location: *</label>
