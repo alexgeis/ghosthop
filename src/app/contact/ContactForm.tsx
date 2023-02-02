@@ -74,12 +74,16 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 	return (
 		<main className={styles.wrapper}>
 			<section className={styles.contactHeader}>
-				<h1>Make your next event... pretty good</h1>
+				<h1>Bring good music to your event</h1>
 				<p>
-					Ghosthop will travel for events throughout Denver, Boulder, and the
-					surrounding areas.
+					Ghosthop will travel for events throughout <br /> Denver, Boulder, and
+					the surrounding areas.
 				</p>
-				<p>Get started now for a free consultation / quote</p>
+				<p>
+					Reach out now for a free <strong>consultation</strong> or{" "}
+					<strong>quote</strong>
+				</p>
+				<h6>* all fields are required</h6>
 			</section>
 			<form
 				ref={formRef}
@@ -133,7 +137,7 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					<input
 						className={styles.contactFormInput}
 						type="text"
-						placeholder="Briefly describe your event..."
+						placeholder="Brief event description..."
 						name="eventType"
 						value={form.eventType}
 						onChange={handleChange}
@@ -146,7 +150,7 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 						htmlFor="datePick"
 						className={styles.datePickLabel}
 					>
-						Event Date <br></br>&#38; Time
+						Event Date <br></br>&#38; Time: *
 					</label>
 					<div className={styles.contactDateWrapper}>
 						<DatePicker
