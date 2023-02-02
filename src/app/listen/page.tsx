@@ -9,15 +9,16 @@ export default function Listen() {
 	return (
 		<main className={styles.main}>
 			<section className={styles.headWrap}>
-				<h1 className={styles.header}>Listen to our mixes / music</h1>
-				<p className={styles.description}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-					pariatur? Tempora animi consequatur aliquid esse vero cupiditate
-					veniam temporibus debitis quas laboriosam iste sunt vitae maiores
-					doloribus provident, ab quis?
-				</p>
+				<h1 className={styles.header}>
+					<a href="#music">Music</a>
+					{` / `}
+					<a href="#mixes">Mixes</a>
+				</h1>
+				{/* <p className={styles.description}>
+					Check out our DJ mixes and our released music.
+				</p> */}
 			</section>
-			<h2>Music</h2>
+			<h2 id="music">Music</h2>
 			<section className={styles.musicSection}>
 				<div className={styles.musicCard}>
 					<iframe
@@ -42,7 +43,7 @@ export default function Listen() {
 					></iframe>
 				</div>
 			</section>
-			<h2>Mixes</h2>
+			<h2 id="mixes">Mixes</h2>
 			<section className={styles.mixSection}>
 				<div className={styles.mixCard}>
 					<iframe
