@@ -13,16 +13,17 @@
 	text-align: center;
 }
 
-.spinner {
-	position: relative;
-	animation: load-spin 2s ease-in-out 0s infinite;
+@media (prefers-reduced-motion: no-preference) {
+	.spinner {
+		animation: load-spin infinite 20s linear;
+	}
 }
 
 @keyframes load-spin {
 	from {
-		rotate: 0;
+		transform: rotate(0deg);
 	}
 	to {
-		rotate: 360;
+		transform: rotate(360deg);
 	}
 }
