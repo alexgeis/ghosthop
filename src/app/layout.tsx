@@ -1,6 +1,7 @@
 import "./globals.css";
 import { NavBar } from "./(components)/nav/NavBar";
 import { Footer } from "./(components)/footer/Footer";
+import ScrollToTop from "./(components)/scrollToTop";
 import Providers from "./providers";
 
 // manually delay for demo
@@ -26,6 +27,7 @@ export default function RootLayout({
 			<body>
 				<Providers>
 					<NavBar />
+					<ScrollToTop />
 					{children}
 					<Footer />
 				</Providers>

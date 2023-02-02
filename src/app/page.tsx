@@ -27,7 +27,7 @@ export default function Home() {
 						href="/contact"
 						className={styles.heroBtn}
 					>
-						HIRE US
+						HIRE NOW
 					</Link>
 				</div>
 			</section>
