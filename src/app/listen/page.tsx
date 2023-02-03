@@ -1,4 +1,6 @@
+"use client";
 import styles from "./listen.module.css";
+import { useEffect } from "react";
 import Link from "next/link";
 // import Image from "next/image";
 
@@ -6,6 +8,9 @@ import Link from "next/link";
 // https://soundcloud.com/enjaofficial
 
 export default function Listen() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<main className={styles.main}>
 			<section className={styles.headWrap}>

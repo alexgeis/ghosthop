@@ -88,8 +88,7 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 					surrounding areas
 				</p>
 				<p>
-					Reach out now for a free <strong>consultation</strong> or{" "}
-					<strong>quote</strong>
+					FREE <strong>consultation</strong> or <strong>quote</strong>
 				</p>
 				<h6>* all fields are required</h6>
 			</section>
