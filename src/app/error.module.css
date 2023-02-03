@@ -1,8 +1,11 @@
 .main {
 	background-color: var(--background-dark);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .description {
 	color: var(--light-color);
-	text-align: center;
 }
