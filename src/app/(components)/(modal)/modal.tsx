@@ -7,12 +7,22 @@ interface ModalType {
 	toggle: () => void;
 }
 
-export default function Modal({ children }: ModalType) {
+export default function Modal({ children, isOpen, toggle }: ModalType) {
 	return (
 		<>
-			<div className={styles.modalOverlay}>
-				<div className={styles.modalBox}>{children}</div>
-			</div>
+			{isOpen && (
+				<div
+					className={styles.modalOverlay}
+					onClick={toggle}
+				>
+					<div
+						className={styles.modalBox}
+						onClick={(e) => e.stopPropagation()} // stop event bubbling
+					>
+						{children}
+					</div>
+				</div>
+			)}
 		</>
 	);
 }

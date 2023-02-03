@@ -7,7 +7,9 @@ import Link from "next/link";
 // assets and elements
 import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Hamburger from "./Hamburger";
-import AuthBtn from "./AuthBtn";
+// import AuthBtn from "./AuthBtn";
+// import Modal from "../(modal)/modal";
+// import useModal from "../(modal)/hooks/useModal";
 
 export function NavBar() {
 	// HAMBURGER LOGIC
@@ -19,6 +21,9 @@ export function NavBar() {
 	const closeMenu = () => {
 		setHamOpen(false);
 	};
+
+	// MODAL LOGIC
+	// const { isOpen, toggle } = useModal();
 
 	// VARIABLES
 	const pages = ["about", "listen", "contact"];
@@ -63,8 +68,14 @@ export function NavBar() {
 					);
 				})}
 				{/* LOGIN / LOGOUT */}
-				<AuthBtn />
+				{/* <AuthBtn /> */}
 			</nav>
+			{/* MODAL */}
+			{/* <button onClick={toggle}>Open Modal</button>
+			<Modal
+				isOpen={isOpen}
+				toggle={toggle}
+			></Modal> */}
 			{/* HAMBERDER */}
 			<Hamburger
 				pathname={pathname}

@@ -14,6 +14,9 @@ export default function Loading() {
 				height={90}
 				priority
 			></Image>
+			<div className={styles.description}>
+				Try a page refresh if it&apos;s taking too long
+			</div>
 		</main>
 	);
 }
