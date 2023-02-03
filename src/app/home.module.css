@@ -69,6 +69,9 @@
 	color: var(--background-dark);
 	background-color: var(--highlight-blue);
 }
+.heroBtn:active {
+	transform: scale(0.8);
+}
 
 @media only screen and (max-width: 750px) {
 	.heroContent h1 {

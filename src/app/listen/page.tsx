@@ -16,7 +16,7 @@ export default function Listen() {
 				</h1>
 				<p className={styles.description}>
 					Click one of the sections above to check out our DJ mixes and our
-					released music.
+					released music
 				</p>
 			</section>
 			<h2 id="music">Music</h2>

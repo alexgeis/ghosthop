@@ -28,8 +28,8 @@ export function NavBar() {
 						src={ghosthopLogo}
 						alt="ghosthop logo"
 						className={styles.logo}
-						width={90}
-						height={90}
+						width={80}
+						height={80}
 						priority
 					></Image>
 				</Link>

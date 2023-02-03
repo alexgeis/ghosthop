@@ -85,7 +85,7 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 				<h1>Bring good music to your event</h1>
 				<p>
 					Ghosthop will travel throughout <br /> Denver, Boulder, and the
-					surrounding areas.
+					surrounding areas
 				</p>
 				<p>
 					Reach out now for a free <strong>consultation</strong> or{" "}
