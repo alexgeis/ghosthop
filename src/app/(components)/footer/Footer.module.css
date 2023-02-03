@@ -8,6 +8,7 @@
 	padding: 20px 0;
 	display: flex;
 	justify-content: center;
+	background-color: var(--background-dark);
 }
 
 .footLink {
@@ -24,6 +25,9 @@
 	transition: transform 0.3s;
 	display: grid;
 	place-items: center;
+}
+.iconWrapper:hover {
+	transform: scale(1.2);
 }
 
 .footerImg {

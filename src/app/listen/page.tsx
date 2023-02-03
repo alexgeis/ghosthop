@@ -15,8 +15,8 @@ export default function Listen() {
 					<a href="#mixes">Mixes</a>
 				</h1>
 				<p className={styles.description}>
-					Click one of the sections above to check out our DJ mixes and our
-					released music
+					Click one of the sections above to check out our DJ mixes and released
+					music
 				</p>
 			</section>
 			<h2 id="music">Music</h2>
