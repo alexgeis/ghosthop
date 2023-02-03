@@ -1,7 +1,7 @@
 import "./globals.css";
-import { NavBar } from "./(components)/nav/NavBar";
-import { Footer } from "./(components)/footer/Footer";
-import ScrollToTop from "./(components)/scrollToTop";
+import { NavBar } from "./(components)/(nav)/NavBar";
+import { Footer } from "./(components)/(footer)/Footer";
+import ScrollToTop from "./(components)/(scrollToTop)/scrollToTop";
 import Providers from "./providers";
 
 // manually delay for demo
