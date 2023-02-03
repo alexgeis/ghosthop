@@ -62,6 +62,7 @@
 	margin: 0 auto;
 	border: 0px;
 	width: 70%;
+	min-width: 310px;
 }
 .mixCard > div {
 	font-size: 10px;

@@ -70,7 +70,9 @@ export default function Listen() {
 						>
 							[rotations | 06.20.2022]
 							<br></br>
-							Milk Bar (2010 ElectroPop Mix)
+							Milk Bar
+							<br></br>
+							(2010 ElectroPop Mix)
 						</Link>
 					</div>
 				</div>
@@ -98,7 +100,9 @@ export default function Listen() {
 						>
 							[rotations | 04.08.2021]
 							<br></br>
-							ancient origins of primordials (live mix)
+							ancient origins of primordials
+							<br></br>
+							(live mix)
 						</Link>
 					</div>
 				</div>
@@ -126,7 +130,9 @@ export default function Listen() {
 						>
 							[rotations | 08.11.2021]
 							<br></br>
-							escaping the cave (artistic mix)
+							escaping the cave
+							<br></br>
+							(artistic mix)
 						</Link>
 					</div>
 				</div>
