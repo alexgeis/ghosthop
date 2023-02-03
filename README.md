@@ -193,6 +193,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### MVP
 
 - [ ] All Soundcloud mixes on /listen page
+- [ ] Testimonial section
+- [ ] Photo Gallery section
+- [ ] Finalize text across site
 
 ### Plus Ultra
 
