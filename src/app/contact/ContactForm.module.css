@@ -68,6 +68,9 @@ input:valid + .validity::after {
 	color: var(--light-color);
 	border: 1px solid var(--form-outline-gray);
 }
+.contactFormInput:focus {
+	border: 1px solid var(--highlight-blue);
+}
 
 .msgInputWrapper {
 	position: relative;
@@ -142,7 +145,7 @@ input:valid + .validity::after {
 		padding-right: 20px;
 		padding-bottom: 20px;
 		position: absolute;
-		top: 65px;
+		top: 55px;
 		right: 10px;
 	}
 }

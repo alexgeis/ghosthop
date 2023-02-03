@@ -47,8 +47,16 @@ export const ContactForm = ({}: ContactFormProps): JSX.Element => {
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
 		// validation
-		if (!form.name || !form.email || !form.msg) {
-			alert("Please ensure all required fields contain content!");
+		if (
+			!form.name ||
+			!form.email ||
+			!form.phone ||
+			!form.eventType ||
+			!form.location ||
+			!form.msg ||
+			!form.refer
+		) {
+			alert("Please ensure all fields contain content!");
 			return;
 		}
 		// send to email via EmailJS

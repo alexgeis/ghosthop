@@ -1,19 +1,14 @@
 "use client";
 import styles from "./NavBar.module.css";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
-
-import { signIn, signOut, useSession } from "next-auth/react";
+import AuthBtn from "./AuthBtn";
 
 export function NavBar() {
-	const { data: session, status } = useSession();
-	const loading = status === "loading";
-
 	const pathname = usePathname();
 
 	const pages = ["about", "listen", "contact"];
@@ -56,42 +51,7 @@ export function NavBar() {
 					);
 				})}
 				{/* LOGIN / LOGOUT */}
-				<div className={styles.signedInStatus}>
-					<p
-						className={`nojs-show ${
-							!session && loading ? styles.loading : styles.loaded
-						}`}
-					>
-						{!session && (
-							<>
-								<a
-									href={`/api/auth/signin`}
-									className={styles.buttonPrimary}
-									onClick={(e) => {
-										e.preventDefault();
-										signIn();
-									}}
-								>
-									Sign In
-								</a>
-							</>
-						)}
-						{session?.user && (
-							<>
-								<a
-									href={`/api/auth/signout`}
-									className={styles.button}
-									onClick={(e) => {
-										e.preventDefault();
-										signOut();
-									}}
-								>
-									Sign Out
-								</a>
-							</>
-						)}
-					</p>
-				</div>
+				<AuthBtn />
 			</nav>
 			{/* HAMBERDER */}
 			<Hamburger

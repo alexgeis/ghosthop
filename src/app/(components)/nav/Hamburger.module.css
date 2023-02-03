@@ -24,14 +24,15 @@
 	position: absolute;
 	display: grid;
 	place-items: center;
-	gap: 20px;
+	gap: 30px;
 	top: 0;
 	left: 0;
 	transition: opacity 600ms ease-in-out;
 	width: 100vw;
-	padding: 130px;
-	height: 50vh;
+	padding: 130px 0 40px;
+	height: 60vh;
 	background-color: var(--background-dark);
+	border-bottom: 1px solid var(--light-color);
 	text-align: center;
 	z-index: 1000 !important;
 }
@@ -41,12 +42,16 @@
 	display: block;
 	font-size: 30px;
 	color: var(--light-color);
+	padding-bottom: 2px;
+	border-bottom: 1px solid var(--light-color);
 }
 .hamburgerLinkActive {
 	opacity: 1;
 	display: block;
 	font-size: 30px;
 	color: var(--highlight-blue);
+	padding-bottom: 2px;
+	border-bottom: 1px solid var(--highlight-blue);
 }
 .hamburgerLineOne {
 	transform: rotate(-45deg) translate(-9px, 6px);
