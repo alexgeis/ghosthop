@@ -193,16 +193,15 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### MVP
 
 - [ ] All Soundcloud mixes on /listen page
-- [ ] Replace CSS hard-coded values with variables
-- [ ] Fix hamburger menu stacking on mobile
 
 ### Plus Ultra
 
 - [ ] animations
-  - [ ] lazy / pre-pageload
-  - [ ] pageload
+  - [x] lazy / pre-pageload
+  - [x] loading
   - [ ] section scroll
 - [ ] Light/Dark mode toggle
+- [ ] admin section
 
 See the [open issues](https://github.com/alexgeis/ghosthop/issues) for a full list of proposed features (and known issues).
 
