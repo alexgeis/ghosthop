@@ -1,29 +1,28 @@
-"use client";
 import styles from "./Hamburger.module.css";
-import { useState } from "react";
 import Link from "next/link";
 
 type hamburgerProps = {
 	pathname: string | null;
 	pages: string[];
+	hamOpen: boolean;
+	menuToggle: React.MouseEventHandler<HTMLDivElement>;
+	closeMenu: any;
 };
 
-export default function Hamburger({ pathname, pages }: hamburgerProps) {
-	const [hamOpen, setHamOpen] = useState(false);
-	const hamburgerMenuToggle = () => {
-		setHamOpen(!hamOpen);
-	};
-	const closeMenu = () => {
-		setHamOpen(false);
-	};
-
+export default function Hamburger({
+	pathname,
+	pages,
+	hamOpen,
+	menuToggle,
+	closeMenu,
+}: hamburgerProps) {
 	return (
 		<div className={styles.hamburgerWrapper}>
 			<div
 				className={`${styles.hamburgerBox} ${
 					hamOpen ? styles.hamburgerBoxActive : ""
 				}`}
-				onClick={hamburgerMenuToggle}
+				onClick={menuToggle}
 			>
 				<div className={`${hamOpen ? styles.hamburgerLineOne : ""}`}></div>
 				<div className={`${hamOpen ? styles.hamburgerLineTwo : ""}`}></div>

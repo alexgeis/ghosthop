@@ -1,17 +1,28 @@
 "use client";
 import styles from "./NavBar.module.css";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
-
-import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Image from "next/image";
 import Link from "next/link";
+// assets and elements
+import ghosthopLogo from "../../../assets/logos/ghost-alone.jpeg";
 import Hamburger from "./Hamburger";
 import AuthBtn from "./AuthBtn";
 
 export function NavBar() {
-	const pathname = usePathname();
+	// HAMBURGER LOGIC
+	const [hamOpen, setHamOpen] = useState(false);
 
+	const hamburgerMenuToggle = () => {
+		setHamOpen(!hamOpen);
+	};
+	const closeMenu = () => {
+		setHamOpen(false);
+	};
+
+	// VARIABLES
 	const pages = ["about", "listen", "contact"];
+	const pathname = usePathname();
 
 	return (
 		<header className={styles.wrapper}>
@@ -23,6 +34,7 @@ export function NavBar() {
 				<Link
 					href="/"
 					className={styles.logoLink}
+					onClick={() => closeMenu()}
 				>
 					<Image
 						src={ghosthopLogo}
@@ -57,6 +69,9 @@ export function NavBar() {
 			<Hamburger
 				pathname={pathname}
 				pages={pages}
+				hamOpen={hamOpen}
+				menuToggle={hamburgerMenuToggle}
+				closeMenu={closeMenu}
 			/>
 		</header>
 	);
