@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 import Image from "next/image";
-import { cardData } from "./employeeData";
+import { employeeData } from "./employeeData";
 
 export default function About() {
 	return (
@@ -12,7 +12,7 @@ export default function About() {
 				</p>
 			</section>
 			<section className={styles.team}>
-				{cardData.map((card) => {
+				{employeeData.map((card) => {
 					return (
 						<div
 							className={styles.card}

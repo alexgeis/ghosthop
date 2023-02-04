@@ -1,7 +1,7 @@
 import flawloPic from "../../assets/images/flawlo.jpeg";
-import { Card } from "types/types";
+import { EmployeeCard } from "types/types";
 
-export const cardData: Card[] = [
+export const employeeData: EmployeeCard[] = [
 	{ imgSrc: flawloPic, name: "Benjamin", position: "Co-founder / DJ", id: 1 },
 	{
 		imgSrc: "http://placekitten.com/180/120",

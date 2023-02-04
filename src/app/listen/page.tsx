@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 // import Image from "next/image";
 
+import { mixData } from "./mixData";
+import MixCard from "./mixCard";
+
 // REFERENCE FOR SOUNDCLOUD
 // https://soundcloud.com/enjaofficial
 
@@ -51,187 +54,18 @@ export default function Listen() {
 			</section>
 			<h2 id="mixes">Mixes</h2>
 			<section className={styles.mixSection}>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1291838809&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/milkbar"
-							title="[rotations | 06.20.2022] - Milk Bar (2010 ElectroPop Mix)"
-							target="_blank"
-						>
-							[rotations | 06.20.2022]
-							<br></br>
-							Milk Bar
-							<br></br>
-							(2010 ElectroPop Mix)
-						</Link>
-					</div>
-				</div>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1029754588&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/ancient-origins-of-primordials"
-							title="[rotations | 04.08.2021] - ancient origins of primordials (live mix)"
-							target="_blank"
-						>
-							[rotations | 04.08.2021]
-							<br></br>
-							ancient origins of primordials
-							<br></br>
-							(live mix)
-						</Link>
-					</div>
-				</div>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104399886&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/escaping-the-cave"
-							title="[rotations | 08.11.2021] - escaping the cave (artistic mix)"
-							target="_blank"
-						>
-							[rotations | 08.11.2021]
-							<br></br>
-							escaping the cave
-							<br></br>
-							(artistic mix)
-						</Link>
-					</div>
-				</div>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104399886&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/escaping-the-cave"
-							title="[rotations | 08.11.2021] - escaping the cave (artistic mix)"
-							target="_blank"
-						>
-							[rotations | 08.11.2021]
-							<br></br>
-							escaping the cave
-							<br></br>
-							(artistic mix)
-						</Link>
-					</div>
-				</div>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1133449834&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-							style="color: #cccccc; text-decoration: none;"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/becomingmachine"
-							title="[rotations | 09.29.2021] - BecomingMachine (extended live mix)"
-							target="_blank"
-						>
-							[rotations | 09.29.2021]
-							<br></br>
-							BecomingMachine
-							<br></br>
-							(extended live mix)
-						</Link>
-					</div>
-				</div>
-				<div className={styles.mixCard}>
-					<iframe
-						style={{ borderRadius: "12px", border: "0px" }}
-						width="100%"
-						height="166"
-						allow="autoplay"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1138009360&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-					></iframe>
-					<div>
-						{/* <Link
-							href="https://soundcloud.com/enjaofficial"
-							title="enja"
-							target="_blank"
-						>
-							enja
-						</Link>{" "}
-						·{" "} */}
-						<Link
-							href="https://soundcloud.com/enjaofficial/rotations-10062021-becomingmachine2-live-mix"
-							title="[rotations | 10.06.2021] - BecomingMachine2 (live mix)"
-							target="_blank"
-						>
-							[rotations | 10.06.2021]
-							<br></br>
-							BecomingMachine2
-							<br></br>
-							(live mix)
-						</Link>
-					</div>
-				</div>
+				{mixData.map((mix, i) => {
+					return (
+						<MixCard
+							mixUrl={mix.mixUrl}
+							mixTitle={mix.mixTitle}
+							djUrl={mix.djUrl}
+							djTitle={mix.djTitle}
+							iframeSrc={mix.iframeSrc}
+							key={i}
+						/>
+					);
+				})}
 			</section>
 		</main>
 	);

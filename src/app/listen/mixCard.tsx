@@ -1,15 +1,55 @@
 import styles from "./listen.module.css";
 import Link from "next/link";
+import { MixData } from "types/types";
 
-export default function mixCard({
+export default function MixCard({
 	iframeSrc,
 	mixUrl,
 	mixTitle,
 	djUrl,
 	djTitle,
-}) {
+}: MixData) {
 	const mixTitleArr = mixTitle.split(" ");
-	console.log(mixTitleArr);
+
+	const withinArrayRegex = /\[[^)]*\]/;
+	const mixSeriesTitle: RegExpMatchArray | null =
+		mixTitle.match(withinArrayRegex);
+
+	/*
+        \[ : match an opening array bracket
+        ( : begin capturing group
+        [^)]+: match one or more non ) characters
+        ) : end capturing group
+        \] : match closing array bracket
+
+    */
+
+	const mixTitleRegex = /\-\s([^)]*)\s\(/;
+	let mixTitleAlone: RegExpMatchArray | null = mixTitle.match(mixTitleRegex);
+	if (mixTitleAlone) mixTitleAlone[1] = mixTitleAlone[1].trim();
+
+	/*
+        \- : match a dash
+        \s : match a whitespace
+        ( : begin capturing group
+        [^)]+: match one or more non ) characters
+        ) : end capturing group
+        \s : match a whitespace
+        \( : match opening parentheses
+
+    */
+
+	const withinParensRegex = /\([^)]*\)/;
+	const mixTypeTitle: RegExpMatchArray | null =
+		mixTitle.match(withinParensRegex);
+	/*
+        \( : match an opening parentheses
+        ( : begin capturing group
+        [^)]+: match one or more non ) characters
+        ) : end capturing group
+        \) : match closing parentheses
+
+    */
 
 	return (
 		<div className={styles.mixCard}>
@@ -31,15 +71,14 @@ export default function mixCard({
         ·{" "} */}
 				<Link
 					href={mixUrl}
-					// title="[rotations | 10.06.2021] - BecomingMachine2 (live mix)"
 					title={mixTitle}
 					target="_blank"
 				>
-					[SERIES TITLE | DATE]
+					{mixSeriesTitle && mixSeriesTitle[0]}
 					<br></br>
-					MIX TITLE WITH SPACES
+					{mixTitleAlone && mixTitleAlone[1]}
 					<br></br>
-					(SONG NOTES IN PARENS)
+					{mixTypeTitle && mixTypeTitle[0]}
 				</Link>
 			</div>
 		</div>
