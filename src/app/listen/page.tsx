@@ -141,6 +141,67 @@ export default function Listen() {
 						</Link>
 					</div>
 				</div>
+				<div className={styles.mixCard}>
+					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104399886&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						{/* <Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+						>
+							enja
+						</Link>{" "}
+						·{" "} */}
+						<Link
+							href="https://soundcloud.com/enjaofficial/escaping-the-cave"
+							title="[rotations | 08.11.2021] - escaping the cave (artistic mix)"
+							target="_blank"
+						>
+							[rotations | 08.11.2021]
+							<br></br>
+							escaping the cave
+							<br></br>
+							(artistic mix)
+						</Link>
+					</div>
+				</div>
+				<div className={styles.mixCard}>
+					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1133449834&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						{/* <Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+							style="color: #cccccc; text-decoration: none;"
+						>
+							enja
+						</Link>{" "}
+						·{" "} */}
+						<Link
+							href="https://soundcloud.com/enjaofficial/becomingmachine"
+							title="[rotations | 09.29.2021] - BecomingMachine (extended live mix)"
+							target="_blank"
+						>
+							[rotations | 09.29.2021]
+							<br></br>
+							BecomingMachine
+							<br></br>
+							(extended live mix)
+						</Link>
+					</div>
+				</div>
 			</section>
 		</main>
 	);

@@ -198,7 +198,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [ ] Add PostGres SQL Database
 - [ ] All Soundcloud mixes on /listen page
 - [ ] Contact submit - keep details in SQL database also
-- [ ] Home page - new sections
+- [ ] Home page
+  - [ ] fix section vertical spacing - flex gap issue
   - [ ] Testimonial
   - [ ] Photo Gallery
   - [ ] CTA
