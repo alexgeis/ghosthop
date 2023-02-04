@@ -215,7 +215,6 @@ export default function Listen() {
 							href="https://soundcloud.com/enjaofficial"
 							title="enja"
 							target="_blank"
-							style="color: #cccccc; text-decoration: none;"
 						>
 							enja
 						</Link>{" "}
