@@ -202,6 +202,37 @@ export default function Listen() {
 						</Link>
 					</div>
 				</div>
+				<div className={styles.mixCard}>
+					<iframe
+						style={{ borderRadius: "12px", border: "0px" }}
+						width="100%"
+						height="166"
+						allow="autoplay"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1138009360&color=%2300ffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+					></iframe>
+					<div>
+						{/* <Link
+							href="https://soundcloud.com/enjaofficial"
+							title="enja"
+							target="_blank"
+							style="color: #cccccc; text-decoration: none;"
+						>
+							enja
+						</Link>{" "}
+						·{" "} */}
+						<Link
+							href="https://soundcloud.com/enjaofficial/rotations-10062021-becomingmachine2-live-mix"
+							title="[rotations | 10.06.2021] - BecomingMachine2 (live mix)"
+							target="_blank"
+						>
+							[rotations | 10.06.2021]
+							<br></br>
+							BecomingMachine2
+							<br></br>
+							(live mix)
+						</Link>
+					</div>
+				</div>
 			</section>
 		</main>
 	);
