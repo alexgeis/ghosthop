@@ -192,9 +192,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### MVP
 
+- [ ] Admin
+  - [ ] next-auth login
+  - [ ] admin content/styling
+  - [ ] Add PostGres SQL Database
 - [ ] All Soundcloud mixes on /listen page
-- [ ] Testimonial section
-- [ ] Photo Gallery section
+- [ ] Contact submit - keep details in SQL database also
+- [ ] Home page - new sections
+  - [ ] Testimonial
+  - [ ] Photo Gallery
+  - [ ] CTA
 - [ ] Finalize text across site
 
 ### Plus Ultra
@@ -202,9 +209,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] animations
   - [x] lazy / pre-pageload
   - [x] loading
-  - [ ] section scroll
+  - [ ] section scroll - added css and js, need to connect logic
 - [ ] Light/Dark mode toggle
-- [ ] admin section
 
 See the [open issues](https://github.com/alexgeis/ghosthop/issues) for a full list of proposed features (and known issues).
 
