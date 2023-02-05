@@ -1,7 +1,7 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 	/* padding: 6rem; */
 	width: 100%;
@@ -9,22 +9,22 @@
 }
 
 /* info section */
-.homeInfo,
-.testimonial,
-.gallery,
-.callToAction {
+.homeSection {
 	text-align: center;
+	width: 100%;
+	padding: 40px 20px;
 	margin-bottom: 40px;
+	background: var(--background-dark);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
-.main h2 {
+.homeSection h2 {
 	color: var(--light-color);
 	margin-bottom: 20px;
 }
 
 .homeInfo,
 .gallery {
-	padding: 40px 20px;
-	width: 100%;
 	box-shadow: 0px 1px 7px 0px var(--highlight-blue);
 	/* background-color: var(--highlight-blue); */
 	background: rgb(0, 255, 255);

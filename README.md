@@ -196,7 +196,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [ ] next-auth login
   - [ ] admin content/styling
   - [ ] Add PostGres SQL Database
-- [ ] All Soundcloud mixes on /listen page
 - [ ] Contact submit - keep details in SQL database also
 - [ ] Home page
   - [ ] fix section vertical spacing - flex gap issue
