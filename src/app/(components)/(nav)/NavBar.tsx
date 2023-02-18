@@ -35,21 +35,26 @@ export function NavBar() {
 				<style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
 			</noscript>
 			{/* TODO: fix this ^^^ */}
-			<div className={styles.logoWrapper}>
-				<Link
-					href="/"
-					className={styles.logoLink}
-					onClick={() => closeMenu()}
-				>
-					<Image
-						src={ghosthopLogo}
-						alt="ghosthop logo"
-						className={styles.logo}
-						width={80}
-						height={80}
-						priority
-					></Image>
-				</Link>
+			<div className={styles.logoHireBtnwrapper}>
+				<div className={styles.logoWrapper}>
+					<Link
+						href="/"
+						className={styles.logoLink}
+						onClick={() => closeMenu()}
+					>
+						<Image
+							src={ghosthopLogo}
+							alt="ghosthop logo"
+							className={styles.logo}
+							width={80}
+							height={80}
+							priority
+						></Image>
+					</Link>
+				</div>
+				<div className={styles.hireBtnWrapper}>
+					<button className={styles.hireBtn}>HIRE NOW</button>
+				</div>
 			</div>
 			<nav className={styles.nav}>
 				{pages.map((page: string, i: number) => {
