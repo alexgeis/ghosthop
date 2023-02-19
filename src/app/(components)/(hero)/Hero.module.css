@@ -4,12 +4,14 @@
 	margin: 0 auto;
 	/* object-fit: cover; */
 	position: relative;
+	border-radius: 20px;
 }
 .heroWrapper video {
 	display: flex;
 	width: 100%;
 	height: 500px;
 	object-fit: fill;
+	border-radius: 20px;
 	/* -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
 }
@@ -41,6 +43,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: var(--heroOverlay);
+	border-radius: 20px;
 }
 
 .heroBtn {
@@ -53,16 +56,41 @@
 	padding: 10px 20px;
 	border: 1px solid var(--light-color);
 	border-radius: 15px;
-	background-color: var(--background-dark);
 	transition: all 300ms ease-in-out 0s;
+	/* background-color: var(--background-dark); */
+
+	background: rgb(0, 255, 255);
+	background: -moz-linear-gradient(
+		135deg,
+		rgba(0, 255, 255, 1) 0%,
+		rgba(105, 0, 255, 1) 25%,
+		rgba(105, 0, 255, 1) 75%,
+		rgba(0, 255, 255, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		135deg,
+		rgba(0, 255, 255, 1) 0%,
+		rgba(105, 0, 255, 1) 25%,
+		rgba(105, 0, 255, 1) 75%,
+		rgba(0, 255, 255, 1) 100%
+	);
+	background: linear-gradient(
+		135deg,
+		rgba(0, 255, 255, 1) 0%,
+		rgba(105, 0, 255, 1) 25%,
+		rgba(105, 0, 255, 1) 75%,
+		rgba(0, 255, 255, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffff",endColorstr="#00ffff",GradientType=1);
 }
 .heroBtn:hover {
-	border: 1px solid var(--background-dark);
-	color: var(--background-dark);
-	background-color: var(--highlight-blue);
+	/* border: 1px solid var(--background-dark); */
+	/* color: var(--background-dark); */
+	/* background-color: var(--highlight-blue); */
+	transform: scale(1.1);
 }
 .heroBtn:active {
-	transform: scale(0.8);
+	transform: scale(0.9);
 }
 
 @media only screen and (max-width: 750px) {
