@@ -66,6 +66,9 @@
 	cursor: pointer;
 	transform: scale(1.05);
 }
+.hireBtn:active {
+	transform: scale(0.9);
+}
 
 .logoWrapper {
 	display: flex;
