@@ -53,7 +53,13 @@ export function NavBar() {
 					</Link>
 				</div>
 				<div className={styles.hireBtnWrapper}>
-					<button className={styles.hireBtn}>HIRE NOW</button>
+					<Link
+						href="/contact"
+						className={styles.logoLink}
+						onClick={() => closeMenu()}
+					>
+						<button className={styles.hireBtn}>HIRE NOW</button>
+					</Link>
 				</div>
 			</div>
 			<nav className={styles.nav}>
