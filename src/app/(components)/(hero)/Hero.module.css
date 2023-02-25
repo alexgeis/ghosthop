@@ -84,9 +84,6 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffff",endColorstr="#00ffff",GradientType=1);
 }
 .heroBtn:hover {
-	/* border: 1px solid var(--background-dark); */
-	/* color: var(--background-dark); */
-	/* background-color: var(--highlight-blue); */
 	transform: scale(1.1);
 }
 .heroBtn:active {
