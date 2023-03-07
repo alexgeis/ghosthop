@@ -15,4 +15,9 @@ type MixData = {
 	djTitle: string;
 };
 
+type CarouselImgData = {
+	src: string;
+	alt: string;
+};
+
 declare module "react-datepicker";
