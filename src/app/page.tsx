@@ -2,6 +2,7 @@ import { Inter } from "@next/font/google";
 import styles from "./home.module.css";
 import Hero from "./(components)/(hero)/Hero";
 import Link from "next/link";
+import Carousel from "./(components)/(carousel)/Carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home() {
 
 			<section className={`${styles.homeSection} ${styles.gallery}`}>
 				<h2>PHOTO CAROUSAL / DISPLAY</h2>
+				<Carousel />
 			</section>
 			<section className={`${styles.homeSection} ${styles.callToAction}`}>
 				<h2>Contact us today</h2>
