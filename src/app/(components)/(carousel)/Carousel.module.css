@@ -1,0 +1,18 @@
+.carouselNavBtns {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px 0;
+}
+
+.carouselImg {
+	border-radius: 10px;
+	margin: 0 5px;
+	transition: all 1s;
+}
+
+.prevImg,
+.nextImg {
+	opacity: 0.2;
+	transform: scale(0.8);
+}

@@ -17,13 +17,13 @@ export default function Home() {
 					atmosphere to your next event
 				</p>
 			</section>
-			<section className={`${styles.homeSection} ${styles.testimonial}`}>
+			{/* <section className={`${styles.homeSection} ${styles.testimonial}`}>
 				<h2>TESTIMONIAL SECTION</h2>
 				<p>Clients have a lot to say about Ghosthop</p>
-			</section>
+			</section> */}
 
 			<section className={`${styles.homeSection} ${styles.gallery}`}>
-				<h2>PHOTO CAROUSAL / DISPLAY</h2>
+				<h2>PHOTOS</h2>
 				<Carousel />
 			</section>
 			<section className={`${styles.homeSection} ${styles.callToAction}`}>
