@@ -6,6 +6,22 @@ import redRoom2 from "../../../assets/images/ghosthop_redroom-2.jpg";
 
 export const imageList: CarouselImgData[] = [
 	{
+		src: outsideMilk1,
+		alt: "Handsome boys outside the club",
+	},
+	{
+		src: outsideMilk2,
+		alt: "Handsome boys outside the club",
+	},
+	{
+		src: redRoom1,
+		alt: "Handsome boys in the Milk Bar RedRoom",
+	},
+	{
+		src: redRoom2,
+		alt: "Handsome boys in the Milk Bar RedRoom",
+	},
+	{
 		src: "https://i.imgur.com/Mx7dA2Y.jpg",
 		alt: "A bronze statue of two crossed hands delicately holding a human brain in their fingertips.",
 	},
