@@ -16,7 +16,7 @@ type MixData = {
 };
 
 type CarouselImgData = {
-	src: string;
+	src: string | StaticImageData;
 	alt: string;
 };
 
