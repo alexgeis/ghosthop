@@ -1,4 +1,8 @@
 import { CarouselImgData } from "types/types";
+import outsideMilk1 from "../../../assets/images/ghosthop_outside-milk-1.jpg";
+import outsideMilk2 from "../../../assets/images/ghosthop_outside-milk-2.png";
+import redRoom1 from "../../../assets/images/ghosthop_redroom-1.jpg";
+import redRoom2 from "../../../assets/images/ghosthop_redroom-2.jpg";
 
 export const imageList: CarouselImgData[] = [
 	{
