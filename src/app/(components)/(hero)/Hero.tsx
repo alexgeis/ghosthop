@@ -19,12 +19,12 @@ export default function Hero() {
 			<div className={styles.heroContent}>
 				<h1>GHOSTHOP</h1>
 				<p>DJ WONDERS</p>
-				<Link
+				{/* <Link
 					href="/contact"
 					className={styles.heroBtn}
 				>
 					HIRE NOW
-				</Link>
+				</Link> */}
 			</div>
 		</section>
 	);
