@@ -22,10 +22,10 @@ export default function Home() {
 				<p>Clients have a lot to say about Ghosthop</p>
 			</section> */}
 
-			<section className={`${styles.homeSection} ${styles.gallery}`}>
+			{/* <section className={`${styles.homeSection} ${styles.gallery}`}>
 				<h2>PHOTOS</h2>
 				<Carousel />
-			</section>
+			</section> */}
 			<section className={`${styles.homeSection} ${styles.callToAction}`}>
 				<h2>Contact us today</h2>
 				<Link
