@@ -5,6 +5,8 @@ type EmployeeCard = {
 	name: string;
 	position: string;
 	id: number;
+	instaURL?: string;
+	spottyURL?: string;
 };
 
 type MixData = {

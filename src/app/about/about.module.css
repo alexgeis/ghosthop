@@ -26,7 +26,7 @@
 	width: 100%;
 	display: grid;
 	gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .card {
 	position: relative;
@@ -34,6 +34,7 @@
 }
 .cardImg > * {
 	border-radius: 15px;
+	background-size: cover;
 }
 .cardContent {
 	display: flex;
@@ -46,4 +47,32 @@
 }
 .cardContentPos {
 	color: var(--highlight-blue);
+}
+
+.iconRowWrapper {
+	display: flex;
+	justify-content: space-around;
+	gap: 12px;
+	align-items: center;
+}
+
+/* copied from footer */
+.iconWrapper {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	/* background-color: var(--lessDarkColor); */
+	margin: 0 10px;
+	transition: transform 0.3s;
+	display: grid;
+	place-items: center;
+}
+.iconWrapper:hover {
+	transform: scale(1.2);
+}
+
+.iconImg {
+	width: 25px;
+	max-width: 100%;
+	height: auto;
 }
